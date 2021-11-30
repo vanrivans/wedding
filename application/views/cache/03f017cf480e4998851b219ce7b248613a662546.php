@@ -1,0 +1,1 @@
+<?php /**PATH E:\xampp\htdocs\wedding\application\modules/Layouts/config/_js-link.blade.php ENDPATH**/ ?>

@@ -1,0 +1,1 @@
+<img src="<?php echo e(base_url('assets/images/logo/logo.png')); ?>" style="width:90px" alt="mygym logo" title="mygym logo"><?php /**PATH E:\xampp\htdocs\mygym\application\modules/Layouts/icons/_icon.blade.php ENDPATH**/ ?>
