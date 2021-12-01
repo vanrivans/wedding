@@ -1,4 +1,4 @@
-<img src="" class="cover__image">
+<img src="<?php echo e(base_url('assets/images/cover_mobile.jpg')); ?>" class="cover__image" alt="" title="">
 <div class="cover__box">
 	<div class="cover__opening">
 		<span>UNDANGAN PERNIKAHAN</span>
