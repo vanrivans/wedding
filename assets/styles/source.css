@@ -49,9 +49,9 @@ html {
 	font-family: var(--ff-forum);
 	text-align: center;
 	position: absolute;
-	top: 20%;
+	top: 15%;
 	line-height: normal;
-	font-size: 1.25rem;
+	font-size: 2rem;
 }
 .cover__to {
 	/* color: white; */
@@ -61,4 +61,16 @@ html {
 	bottom: 20%;
 	line-height: normal;
 	font-size: 1rem;
+}
+.cover__btn {
+	position: absolute;
+	bottom: 7.5%;
+}
+.btn {
+	background-color: #af976c;
+	border-radius: 0.5rem;
+}
+.btn__inner {
+	font-family: var(--ff-forum);
+	color: white;
 }

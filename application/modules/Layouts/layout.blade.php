@@ -45,8 +45,7 @@ $CI = &get_instance();
 		<img src="{{ base_url('assets/images/cover_mobile.jpg') }}" class="cover__image">
 		<div class="cover__box">
 			<div class="cover__opening">
-				<span>UNDANGAN PERNIKAHAN</span><br>
-				<span>MERANGKAI KELUARGA</span>
+				<span>UNDANGAN PERNIKAHAN</span>
 			</div>
 			<div class="cover__box__name">
 				<span class="cover__name__style">Amanda Budi Ksatria</span><br>
@@ -56,6 +55,11 @@ $CI = &get_instance();
 			<div class="cover__to">
 				<span>Teruntuk,</span><br>
 				<span>Regina Ayutiara Anmar</span>
+			</div>
+			<div class="cover__btn">
+				<button class="btn">
+					<span class="btn__inner">Buka Undangan</span>
+				</button>
 			</div>
 		</div>
 	</section>

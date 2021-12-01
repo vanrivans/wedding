@@ -4,7 +4,7 @@
 
 
 <?php $__env->startSection('main'); ?>
-	..
+	
 <?php $__env->stopSection(); ?>
 
 

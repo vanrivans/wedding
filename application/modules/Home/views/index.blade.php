@@ -8,7 +8,7 @@
 
 {{-- Define main --}}
 @section('main')
-	..
+	
 @endsection
 
 {{-- Define script --}}
