@@ -1,16 +1,20 @@
+<?php if($device === 1): ?>
 <img src="<?php echo e(base_url('assets/images/cover_mobile.jpg')); ?>" class="cover__image" alt="" title="">
+<?php else: ?>
+<img src="<?php echo e(base_url('assets/images/cover_desktop.jpg')); ?>" class="cover__image" alt="" title="">
+<?php endif; ?>
 <div class="cover__box">
 	<div class="cover__opening">
 		<span>UNDANGAN PERNIKAHAN</span>
 	</div>
 	<div class="cover__box__name">
-		<span class="cover__name__style">Amanda Budi Ksatria</span><br>
+		<span class="cover__name__style"><?php echo e($brideFullName2); ?></span><br>
 		<span class="cover__name__style">&</span><br>
-		<span class="cover__name__style">Tasia Wardantika</span>
+		<span class="cover__name__style"><?php echo e($brideFullName1); ?></span>
 	</div>
 	<div class="cover__to">
 		<span>Teruntuk,</span><br>
-		<span>Regina Ayutiara Anmar</span>
+		<span><?php echo e($recipient); ?></span>
 	</div>
 	<div class="cover__btn">
 		<button class="btn" id="btn-cover">

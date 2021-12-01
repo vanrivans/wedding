@@ -46,7 +46,7 @@ $CI = &get_instance();
 	</section>
 
     {{-- Header & Body --}}
-    <div class="container-fluid p-0">
+    <div class="container-fluid" style="z-index:1">
 
         <div class="row">
 

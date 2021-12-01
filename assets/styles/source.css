@@ -1,8 +1,43 @@
+/************************************************* General *************************************************/
 html {
 	font-family: var(--ff-forum);
 	--ff-primary: var(--ff-forum);
 	--ff-secondary: var(--ff-pinyon);
+	--ff-third: var(--ff-dancing);
+	--clr-secondary: #af976c;
+	--clr-third: #7f703f;
+	font-size: 18px;
 }
+a[href],
+a[href]:hover {
+	color: #000;
+	text-decoration: none;
+}
+a[href],
+button {
+	color: #000;
+	cursor: pointer;
+}
+.btn {
+	background-color: var(--clr-secondary);
+	border-radius: 0.5rem;
+	box-shadow: 0px 2px 2px rgb(127 112 63 / 50%);
+}
+.btn__inner {
+	font-family: var(--ff-primary);
+	color: white;
+}
+.bi {
+	font-size: 13px;
+}
+.left_border {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/************************************************* Cover *************************************************/
 .cover {
 	position: fixed;
 	top: 0;
@@ -71,16 +106,119 @@ html {
 	position: absolute;
 	bottom: 7.5%;
 }
-.btn {
-	background-color: #af976c;
-	border-radius: 0.5rem;
-	box-shadow: 0px 2px 2px rgb(127 112 63 / 50%);
-}
-.btn__inner {
-	font-family: var(--ff-primary);
-	color: white;
-}
 .cover__destroy {
 	-webkit-animation: puff-out-center 1s cubic-bezier(0.165, 0.84, 0.44, 1) both;
 	animation: puff-out-center 1s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+/************************************************* Header *************************************************/
+.header_prolog {
+	display: block;
+	position: relative;
+	padding: 5%;
+	font-family: var(--ff-primary);
+	color: black;
+	line-height: normal;
+	text-align: center;
+}
+
+/************************************************* Recipient *************************************************/
+.recipient {
+	display: block;
+	position: relative;
+	background-color: var(--clr-secondary);
+	color: white;
+	font-family: var(--ff-primary);
+	line-height: normal;
+	text-align: center;
+	padding: 5%;
+}
+.recipient__text {
+	font-size: 1rem;
+}
+.recipient__name {
+	font-size: 1.75rem;
+}
+
+/************************************************* Content *************************************************/
+.content {
+	display: block;
+	position: relative;
+	background-color: white;
+	color: black;
+	font-family: var(--ff-primary);
+	line-height: normal;
+	text-align: center;
+	padding: 7.5% 5%;
+}
+.content__head__title {
+	font-size: 1.5rem;
+	color: var(--clr-secondary);
+	font-weight: bolder;
+	padding: 5% 0;
+}
+.content__head__body {
+	font-style: italic;
+}
+.content__body {
+	display: block;
+	position: relative;
+	padding: 10%;
+}
+.content__body__person {
+	display: block;
+	position: relative;
+}
+.person {
+	display: block;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: 5%;
+}
+.person::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50% 50%;
+	border: 2px solid var(--clr-third);
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	z-index: 1;
+}
+.person__image {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50% 50%;
+}
+.person_name {
+	padding: 7.5%;
+}
+.person_name_style {
+	font-family: var(--ff-secondary);
+	color: var(--clr-third);
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+.person_parent {
+	padding: 0;
+}
+.person_ig {
+	padding: 0 5%;
+}
+.content__body__separator {
+	display: block;
+	position: relative;
+	text-align: center;
+	padding: 5%;
+}
+.content__body__separator__style {
+	color: var(--clr-third);
+	font-size: 3rem;
+	font-weight: bolder;
+	font-family: var(--ff-secondary);
 }
