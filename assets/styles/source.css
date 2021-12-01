@@ -25,6 +25,8 @@ html {
 	object-fit: cover;
 	object-position: center;
 	filter: blur(1px);
+	-webkit-animation: kenburns-top 5s ease-out both;
+	animation: kenburns-top 5s ease-out both;
 }
 .cover__box {
 	display: flex;
