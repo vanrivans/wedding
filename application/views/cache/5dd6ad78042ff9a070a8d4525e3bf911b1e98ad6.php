@@ -41,7 +41,7 @@ $CI = &get_instance();
 <body style="overflow-x:hidden">
 
 	
-	<div class="cover">
+	<section class="cover">
 		<img src="<?php echo e(base_url('assets/images/cover_mobile.jpg')); ?>" class="cover__image">
 		<div class="cover__box">
 			<div class="cover__opening">
@@ -58,7 +58,7 @@ $CI = &get_instance();
 				<span>Regina Ayutiara Anmar</span>
 			</div>
 		</div>
-	</div>
+	</section>
 
     
     <div class="container-fluid p-0">
