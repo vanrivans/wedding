@@ -30,7 +30,7 @@ html {
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-	color: var(--clr-ivory);
+	color: white;
 }
 .cover__box__name {
 	position: absolute;
