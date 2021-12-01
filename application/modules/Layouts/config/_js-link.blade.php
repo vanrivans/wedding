@@ -28,4 +28,8 @@
 		$(".cover__image").attr("src", srcCoverImg);
 	}
 
+	$("#btn-cover").on('click', function () {
+		$(".cover").addClass("cover__destroy");
+	});
+
 </script>

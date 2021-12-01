@@ -28,5 +28,9 @@
 		$(".cover__image").attr("src", srcCoverImg);
 	}
 
+	$("#btn-cover").on('click', function () {
+		$(".cover").addClass("cover__destroy");
+	});
+
 </script>
 <?php /**PATH E:\xampp\htdocs\wedding\application\modules/Layouts/config/_js-link.blade.php ENDPATH**/ ?>

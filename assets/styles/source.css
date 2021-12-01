@@ -55,6 +55,7 @@ html {
 	top: 15%;
 	line-height: normal;
 	font-size: 2rem;
+	text-shadow: 0px 1px 1px rgb(0 0 0 / 50%);
 }
 .cover__to {
 	/* color: white; */
@@ -64,6 +65,7 @@ html {
 	bottom: 20%;
 	line-height: normal;
 	font-size: 1rem;
+	text-shadow: 0px 1px 1px rgb(0 0 0 / 50%);
 }
 .cover__btn {
 	position: absolute;
@@ -72,8 +74,13 @@ html {
 .btn {
 	background-color: #af976c;
 	border-radius: 0.5rem;
+	box-shadow: 0px 2px 2px rgb(127 112 63 / 50%);
 }
 .btn__inner {
 	font-family: var(--ff-primary);
 	color: white;
+}
+.cover__destroy {
+	-webkit-animation: puff-out-center 1s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+	animation: puff-out-center 1s cubic-bezier(0.165, 0.84, 0.44, 1) both;
 }
