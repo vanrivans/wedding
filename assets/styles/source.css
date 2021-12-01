@@ -1,0 +1,46 @@
+.cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-image: url(../images/cover_mobile.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.cover__box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.cover__box__name {
+	text-align: center;
+	color: white;
+	font-family: var(--ff-pinyon);
+	font-size: 2rem;
+	line-height: normal;
+}
+.cover__name__style {
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.cover__opening {
+	color: white;
+	font-family: var(--ff-forum);
+	text-align: center;
+	position: absolute;
+	top: 20%;
+	line-height: normal;
+	font-size: 1.25rem;
+}
+.cover__to {
+	color: white;
+	font-family: var(--ff-forum);
+	text-align: center;
+	position: absolute;
+	bottom: 20%;
+	line-height: normal;
+	font-size: 1rem;
+}

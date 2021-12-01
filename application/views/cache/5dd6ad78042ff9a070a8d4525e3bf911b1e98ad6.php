@@ -31,13 +31,34 @@ $CI = &get_instance();
 
     <title><?= empty($PageTitle) ? '' : $PageTitle; ?></title>
 
-    
+    <link rel="shortcut icon" href="<?php echo e(base_url('assets/logo/logo.png')); ?>" />
+    <link href="<?php echo e(base_url('assets/logo/logo.png')); ?>" rel='icon' type='image/x-icon'/>
 
     
     <?php echo $__env->make('Layouts.config._css-link', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 </head>
 <body style="overflow-x:hidden">
+
+	
+	<div class="cover">
+		
+		<div class="cover__box">
+			<div class="cover__opening">
+				<span>UNDANGAN PERNIKAHAN</span><br>
+				<span>MERANGKAI KELUARGA</span>
+			</div>
+			<div class="cover__box__name">
+				<span class="cover__name__style">Amanda Budi Ksatria</span><br>
+				<span class="cover__name__style">&</span><br>
+				<span class="cover__name__style">Tasia Wardantika</span>
+			</div>
+			<div class="cover__to">
+				<span>Teruntuk,</span><br>
+				<span>Regina Ayutiara Anmar</span>
+			</div>
+		</div>
+	</div>
 
     
     <div class="container-fluid p-0">

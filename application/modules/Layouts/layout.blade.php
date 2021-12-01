@@ -31,14 +31,34 @@ $CI = &get_instance();
 
     <title><?= empty($PageTitle) ? '' : $PageTitle; ?></title>
 
-    {{-- <link rel="shortcut icon" href="<?=base_url('assets/images/logo/logo.png'); ?>" />
-    <link href="<?=base_url('assets/images/logo/logo.png'); ?>" rel='icon' type='image/x-icon'/> --}}
+    <link rel="shortcut icon" href="{{ base_url('assets/logo/logo.png') }}" />
+    <link href="{{ base_url('assets/logo/logo.png') }}" rel='icon' type='image/x-icon'/>
 
     {{-- Custom link css --}}
     @include('Layouts.config._css-link')
 
 </head>
 <body style="overflow-x:hidden">
+
+	{{-- Cover --}}
+	<div class="cover">
+		{{-- <img src="{{ base_url('assets/images/cover_mobile.png') }}" class="cover__image"> --}}
+		<div class="cover__box">
+			<div class="cover__opening">
+				<span>UNDANGAN PERNIKAHAN</span><br>
+				<span>MERANGKAI KELUARGA</span>
+			</div>
+			<div class="cover__box__name">
+				<span class="cover__name__style">Amanda Budi Ksatria</span><br>
+				<span class="cover__name__style">&</span><br>
+				<span class="cover__name__style">Tasia Wardantika</span>
+			</div>
+			<div class="cover__to">
+				<span>Teruntuk,</span><br>
+				<span>Regina Ayutiara Anmar</span>
+			</div>
+		</div>
+	</div>
 
     {{-- Header & Body --}}
     <div class="container-fluid p-0">
