@@ -1,6 +1,7 @@
 html {
 	font-family: var(--ff-forum);
-	--clr-ivory: #fffff0;
+	--ff-primary: var(--ff-forum);
+	--ff-secondary: var(--ff-pinyon);
 }
 .cover {
 	position: fixed;
@@ -37,7 +38,7 @@ html {
 	top: 40%;
 	text-align: center;
 	/* color: white; */
-	font-family: var(--ff-pinyon);
+	font-family: var(--ff-secondary);
 	font-size: 2rem;
 	line-height: normal;
 }
@@ -46,7 +47,7 @@ html {
 }
 .cover__opening {
 	/* color: white; */
-	font-family: var(--ff-forum);
+	font-family: var(--ff-primary);
 	text-align: center;
 	position: absolute;
 	top: 15%;
@@ -55,7 +56,7 @@ html {
 }
 .cover__to {
 	/* color: white; */
-	font-family: var(--ff-forum);
+	font-family: var(--ff-primary);
 	text-align: center;
 	position: absolute;
 	bottom: 20%;
@@ -71,6 +72,6 @@ html {
 	border-radius: 0.5rem;
 }
 .btn__inner {
-	font-family: var(--ff-forum);
+	font-family: var(--ff-primary);
 	color: white;
 }
