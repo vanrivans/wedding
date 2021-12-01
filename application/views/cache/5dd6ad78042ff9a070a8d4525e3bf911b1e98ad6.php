@@ -42,7 +42,7 @@ $CI = &get_instance();
 
 	
 	<div class="cover">
-		
+		<img src="<?php echo e(base_url('assets/images/cover_mobile.jpg')); ?>" class="cover__image">
 		<div class="cover__box">
 			<div class="cover__opening">
 				<span>UNDANGAN PERNIKAHAN</span><br>

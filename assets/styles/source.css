@@ -1,3 +1,6 @@
+html {
+	font-family: var(--ff-forum);
+}
 .cover {
 	position: fixed;
 	top: 0;
@@ -5,10 +8,18 @@
 	width: 100%;
 	height: 100%;
 	z-index: 2;
-	background-image: url(../images/cover_mobile.jpg);
+	/* background-image: url(../images/cover_mobile.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover; */
+}
+.cover__image {
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+	object-fit: cover;
+	object-position: center;
+	filter: blur(1px);
 }
 .cover__box {
 	display: flex;
@@ -17,6 +28,8 @@
 	height: 100%;
 }
 .cover__box__name {
+	position: absolute;
+	top: 40%;
 	text-align: center;
 	color: white;
 	font-family: var(--ff-pinyon);

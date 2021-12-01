@@ -42,7 +42,7 @@ $CI = &get_instance();
 
 	{{-- Cover --}}
 	<div class="cover">
-		{{-- <img src="{{ base_url('assets/images/cover_mobile.png') }}" class="cover__image"> --}}
+		<img src="{{ base_url('assets/images/cover_mobile.jpg') }}" class="cover__image">
 		<div class="cover__box">
 			<div class="cover__opening">
 				<span>UNDANGAN PERNIKAHAN</span><br>
