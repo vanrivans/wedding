@@ -149,6 +149,8 @@
 		$('body').css('overflow-y', 'scroll');
 		
 		callAnimation();
+
+		$(".cover").css('z-index', 0);
 	});
 	
 
