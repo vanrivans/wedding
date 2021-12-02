@@ -1,5 +1,5 @@
 <?php if($device === 1): ?>
-<img src="<?php echo e(base_url('assets/images/cover_mobile.jpg')); ?>" class="cover__image" alt="" title="">
+<img src="<?php echo e(base_url('assets/images/cover_mobile.webp')); ?>" class="cover__image" alt="" title="">
 <?php else: ?>
 <img src="<?php echo e(base_url('assets/images/cover_desktop.jpg')); ?>" class="cover__image" alt="" title="">
 <?php endif; ?>

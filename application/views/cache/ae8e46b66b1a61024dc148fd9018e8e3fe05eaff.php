@@ -2,6 +2,7 @@
 	<div class="content__head" id="sec-content-head">
 		<div class="row">
 			<div class="col-xs-12">
+				<div>بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
 				<div class="content__head__title title_style">Bismillahirrahmanirrahim</div>
 				<p class="content__head__body">
 					Assalamu'alaikum Warahmatullahi Wabarakaatuh<br>
@@ -21,7 +22,7 @@
 				<div class="content__body__person" id="sec-content-body-p1">
 					<center>
 					<div class="person">
-						<img src="<?php echo e(base_url('assets/images/p1.jpg')); ?>" class="person__image" alt="" title="">
+						<img src="<?php echo e(base_url('assets/images/p1.webp')); ?>" class="person__image" alt="" title="">
 					</div>
 					</center>
 					<div class="person_name">
@@ -47,7 +48,7 @@
 				<div class="content__body__person" id="sec-content-body-p2">
 					<center>
 					<div class="person">
-						<img src="<?php echo e(base_url('assets/images/p2.jpg')); ?>" class="person__image">
+						<img src="<?php echo e(base_url('assets/images/p2.webp')); ?>" class="person__image">
 					</div>
 					</center>
 					<div class="person_name">

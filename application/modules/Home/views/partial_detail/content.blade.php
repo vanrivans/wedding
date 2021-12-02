@@ -2,6 +2,7 @@
 	<div class="content__head" id="sec-content-head">
 		<div class="row">
 			<div class="col-xs-12">
+				<div>بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
 				<div class="content__head__title title_style">Bismillahirrahmanirrahim</div>
 				<p class="content__head__body">
 					Assalamu'alaikum Warahmatullahi Wabarakaatuh<br>
