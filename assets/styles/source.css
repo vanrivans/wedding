@@ -27,6 +27,16 @@ button {
 	font-family: var(--ff-primary);
 	color: white;
 }
+.btn-check:focus + .btn,
+.btn:focus {
+	outline: 0;
+	box-shadow: 0 0 0 0.1rem var(--clr-third);
+}
+.btn-check:focus + .btn,
+.btn:focus {
+	outline: 0;
+	box-shadow: 0 0 0 0.1rem var(--clr-third);
+}
 .bi {
 	font-size: 13px;
 }
@@ -35,6 +45,12 @@ button {
 	position: absolute;
 	left: 0;
 	top: 0;
+}
+.title_style {
+	font-family: var(--ff-primary);
+	font-weight: bolder;
+	color: var(--clr-secondary);
+	font-size: 1.5rem;
 }
 
 /************************************************* Cover *************************************************/
@@ -152,9 +168,6 @@ button {
 	padding: 7.5% 5%;
 }
 .content__head__title {
-	font-size: 1.5rem;
-	color: var(--clr-secondary);
-	font-weight: bolder;
 	padding: 5% 0;
 }
 .content__head__body {
@@ -221,4 +234,68 @@ button {
 	font-size: 3rem;
 	font-weight: bolder;
 	font-family: var(--ff-secondary);
+}
+
+/************************************************* Remaining *************************************************/
+.remaining {
+	display: block;
+	position: relative;
+	padding: 5%;
+}
+
+/************************************************* Event *************************************************/
+.event {
+	display: block;
+	position: relative;
+	padding: 5%;
+	text-align: center;
+}
+.event__prolog {
+	display: block;
+	position: relative;
+	padding: 5%;
+}
+.event__prolog__title {
+	padding: 5%;
+}
+.event__prolog__content {
+	line-height: normal;
+	font-size: 1rem;
+	font-family: var(--ff-primary);
+	font-style: italic;
+}
+.event__date {
+	display: block;
+	position: relative;
+	padding: 5%;
+	line-height: normal;
+}
+.event__akad,
+.event__resepsi {
+	display: block;
+	position: relative;
+	padding: 5%;
+	text-align: center;
+	font-family: var(--ff-primary);
+}
+.event__akad__title,
+.event__resepsi__title {
+	padding: 0 5%;
+}
+.event__akad__time,
+.event__resepsi__time {
+	padding: 0 5% 7.5% 5%;
+}
+.event__akad__place,
+.event__resepsi__place {
+	line-height: normal;
+	padding: 0 5%;
+}
+.event__akad__address,
+.event__resepsi__address {
+	line-height: normal;
+	padding: 0 5%;
+}
+.btn_maps {
+	font-size: 14px;
 }
