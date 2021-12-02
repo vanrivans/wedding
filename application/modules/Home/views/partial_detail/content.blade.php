@@ -21,7 +21,7 @@
 				<div class="content__body__person" id="sec-content-body-p1">
 					<center>
 					<div class="person">
-						<img src="{{ base_url('assets/images/p1.jpg') }}" class="person__image" alt="" title="">
+						<img src="{{ base_url('assets/images/p1.webp') }}" class="person__image" alt="" title="">
 					</div>
 					</center>
 					<div class="person_name">
@@ -47,7 +47,7 @@
 				<div class="content__body__person" id="sec-content-body-p2">
 					<center>
 					<div class="person">
-						<img src="{{ base_url('assets/images/p2.jpg') }}" class="person__image">
+						<img src="{{ base_url('assets/images/p2.webp') }}" class="person__image">
 					</div>
 					</center>
 					<div class="person_name">

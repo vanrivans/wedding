@@ -1,5 +1,5 @@
 @if ($device === 1)
-<img src="{{ base_url('assets/images/cover_mobile.jpg') }}" class="cover__image" alt="" title="">
+<img src="{{ base_url('assets/images/cover_mobile.webp') }}" class="cover__image" alt="" title="">
 @else
 <img src="{{ base_url('assets/images/cover_desktop.jpg') }}" class="cover__image" alt="" title="">
 @endif
