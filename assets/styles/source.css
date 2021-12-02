@@ -52,6 +52,24 @@ button {
 	color: var(--clr-secondary);
 	font-size: 1.5rem;
 }
+.border-lr::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	border-top: 2px solid var(--clr-secondary);
+	animation: br_animation 2s linear forwards;
+}
+.border-lr::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	border-top: 2px solid var(--clr-secondary);
+	animation: br_animation 2s linear forwards;
+}
 
 /************************************************* Cover *************************************************/
 .cover {
@@ -269,6 +287,7 @@ button {
 	position: relative;
 	padding: 5%;
 	line-height: normal;
+	margin: 5%;
 }
 .event__akad,
 .event__resepsi {

@@ -31,13 +31,13 @@ class Home extends MY_Controller
 		$data['parent1']			= 'Bapak Warsito dan Ibu Atik Kusmiati';
 		$data['parent2']			= 'Bapak Budiarjo (Alm) dan Ibu Ninik Mursini';
 		$data['akadDy']				= 'Ahad';
-		$data['akadDate']			= '19 Desember 2021';
+		$data['akadDate']			= '19.12.2021';
 		$data['akadTime']			= '09.00 - selesai';
 		$data['akadPlace']			= 'Notosuman Restaurant';
 		$data['akadAddress']		= 'Jl. Raya Ngawi - Solo No.Km4, Gemarang Timur, Watualang, Kec. Ngawi, Kabupaten Ngawi, Jawa Timur 63218';
 		$data['akadLoc']			= 'https://www.google.co.id/maps/place/Notosuman+Restaurant/@-7.4031099,111.4112886,17z/';
 		$data['resepsiDay']		 	= 'Ahad';
-		$data['resepsiDate']		= '19 Desember 2021';
+		$data['resepsiDate']		= '19.12.2021';
 		$data['resepsiTime']		= '11.00 - 13.00';
 		$data['resepsiPlace']		= 'Notosuman Restaurant';
 		$data['resepsiAddress']		= 'Jl. Raya Ngawi - Solo No.Km4, Gemarang Timur, Watualang, Kec. Ngawi, Kabupaten Ngawi, Jawa Timur 63218';

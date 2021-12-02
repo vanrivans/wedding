@@ -41,9 +41,7 @@ $CI = &get_instance();
 <body style="overflow-x:hidden">
 
 	
-	<section class="cover">
-		<?php echo $__env->make('Layouts.config._cover', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-	</section>
+	
 
     
     <div class="container-fluid" style="z-index:1">

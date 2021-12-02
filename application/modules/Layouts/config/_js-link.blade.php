@@ -18,7 +18,7 @@
 
 		$(".event__prolog__title").css('opacity', 0);
 		$(".event__prolog__content").css('opacity', 0);
-		$(".event__date").css('opacity', 0);
+		// $(".event__date").css('opacity', 0);
 
 		$(".event__akad__title").css('opacity', 0);
 		$(".event__akad__time").css('opacity', 0);
@@ -88,7 +88,8 @@
 		}
 
 		if (window.scrollY > (secContentBodyP2.offsetTop + secContentBodyP2.offsetHeight + 150)) {
-			$(".event__date").addClass('slide-in-bottom');
+			// $(".event__date").addClass('slide-in-bottom');
+			$(".event__date").addClass('border-lr');
 		}
 
 		if (window.scrollY > (secContentBodyP2.offsetTop + secContentBodyP2.offsetHeight + 200)) {
