@@ -79,11 +79,11 @@
 			$("#sec-content-body-p2 .person_parent").addClass('slide-in-bottom');
 		}
 
-		if (window.scrollY > (secContentBodyP1.offsetTop + secContentBodyP1.offsetHeight + 300)) {
+		if (window.scrollY > (secContentBodyP1.offsetTop + secContentBodyP1.offsetHeight + 400)) {
 			$(".event__prolog__title").addClass('slide-in-bottom');
 		}
 
-		if (window.scrollY > (secContentBodyP1.offsetTop + secContentBodyP1.offsetHeight + 350)) {
+		if (window.scrollY > (secContentBodyP1.offsetTop + secContentBodyP1.offsetHeight + 450)) {
 			$(".event__prolog__content").addClass('slide-in-bottom');
 		}
 
