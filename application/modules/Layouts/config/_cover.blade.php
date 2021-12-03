@@ -8,9 +8,9 @@
 		<span>UNDANGAN PERNIKAHAN</span>
 	</div>
 	<div class="cover__box__name">
-		<span class="cover__name__style">{{ $brideFullName2 }}</span><br>
+		<span class="cover__name__style">{{ $brideFullName1 }}</span><br>
 		<span class="cover__name__style">&</span><br>
-		<span class="cover__name__style">{{ $brideFullName1 }}</span>
+		<span class="cover__name__style">{{ $brideFullName2 }}</span>
 	</div>
 	<div class="cover__to">
 		<span>Teruntuk,</span><br>

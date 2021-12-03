@@ -71,7 +71,7 @@ p {
 	bottom: 0;
 	width: 0;
 	border-top: 2px solid var(--clr-secondary);
-	animation: br_animation 2.5s linear forwards;
+	animation: br_animation 2.25s linear forwards;
 }
 .col-br-l {
 	padding: 0 0 0 calc(var(--bs-gutter-x) * 0.5);
@@ -80,6 +80,53 @@ p {
 	padding: 0 calc(var(--bs-gutter-x) * 0.5) 0 0;
 }
 
+/************************************************* Cover *************************************************/
+.header {
+	background-color: #988063;
+}
+.header__row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	/* width: 100%; */
+	min-height: 700px;
+	height: 100vh;
+	background-image: url(../images/header.webp);
+	background-size: cover;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	/* padding-top: 164px; */
+	opacity: 0.7;
+	align-content: center;
+}
+.header__box {
+	display: block;
+	position: absolute;
+	top: 17.5%;
+	left: 0;
+	right: 0;
+	/* bottom: auto; */
+}
+.header__name {
+	font-family: var(--ff-secondary);
+	color: white;
+	font-weight: bolder;
+	font-size: 3rem;
+	text-align: center;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.header__date {
+	color: white;
+	font-size: 2rem;
+	font-family: var(--ff-primary);
+	text-align: center;
+	line-height: normal;
+	margin: 90% 10% 0 10%;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	/* margin: 0 10%; */
+	font-weight: bolder;
+}
 /************************************************* Cover *************************************************/
 .cover {
 	position: fixed;
@@ -389,11 +436,13 @@ p {
 .event__resepsi__place {
 	line-height: normal;
 	padding: 0 5%;
+	font-weight: bolder;
 }
 .event__akad__address,
 .event__resepsi__address {
 	line-height: normal;
 	padding: 0 5% 3% 5%;
+	font-size: 16px;
 }
 .btn_maps {
 	font-size: 14px;
