@@ -24,37 +24,7 @@
 
 		change_cover_img();
 
-		$(".header_prolog__content").css('opacity', 0);
-
-		$(".recipient__name").css('opacity', 0);
-
-		$(".content__head__body").css('opacity', 0);
-
-		$(".person").css('opacity', 0);
-		$(".person_name").css('opacity', 0);
-		$(".person_parent").css('opacity', 0);
-
-		$(".event__prolog__title").css('opacity', 0);
-		$(".event__prolog__content").css('opacity', 0);
-		// $(".event__date").css('opacity', 0);
-
-		$("#remaining__btn").css('opacity', 0);
-
-		$(".event__akad__title").css('opacity', 0);
-		$(".event__akad__time").css('opacity', 0);
-		$(".event__akad__place").css('opacity', 0);
-		$(".event__akad__address").css('opacity', 0);
-		$(".event__akad a").css('opacity', 0);
-
-		$(".event__resepsi__title").css('opacity', 0);
-		$(".event__resepsi__time").css('opacity', 0);
-		$(".event__resepsi__place").css('opacity', 0);
-		$(".event__resepsi__address").css('opacity', 0);
-		$(".event__resepsi a").css('opacity', 0);
-
-		$(".remaining__date").css('opacity', 0);
-		$(".remaining__col").css('opacity', 0);
-		$(".remaining__btn").css('opacity', 0);
+		// init();
 
 		setTimeout(() => {
 			$("#btn-cover").addClass('heartbeat');
@@ -73,6 +43,40 @@
 		// callAnimationEvent();
 		// callAnimationRemaining();
 	});
+
+	function init() {
+		
+		$(".header_prolog__content").css('opacity', 0);
+
+		$(".recipient__name").css('opacity', 0);
+
+		$(".content__head__body").css('opacity', 0);
+
+		$(".person").css('opacity', 0);
+		$(".person_name").css('opacity', 0);
+		$(".person_parent").css('opacity', 0);
+
+		$(".event__prolog__title").css('opacity', 0);
+		$(".event__prolog__content").css('opacity', 0);
+
+		$("#remaining__btn").css('opacity', 0);
+
+		$(".event__akad__title").css('opacity', 0);
+		$(".event__akad__time").css('opacity', 0);
+		$(".event__akad__place").css('opacity', 0);
+		$(".event__akad__address").css('opacity', 0);
+		$(".event__akad a").css('opacity', 0);
+
+		$(".event__resepsi__title").css('opacity', 0);
+		$(".event__resepsi__time").css('opacity', 0);
+		$(".event__resepsi__place").css('opacity', 0);
+		$(".event__resepsi__address").css('opacity', 0);
+		$(".event__resepsi a").css('opacity', 0);
+
+		$(".remaining__date").css('opacity', 0);
+		$(".remaining__col").css('opacity', 0);
+		$(".remaining__btn").css('opacity', 0);
+	}
 
 	function callAnimationDefault() {
 		
