@@ -81,53 +81,6 @@ p {
 }
 
 /************************************************* Cover *************************************************/
-.header {
-	background-color: #988063;
-}
-.header__row {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	/* width: 100%; */
-	min-height: 700px;
-	height: 100vh;
-	background-image: url(../images/header.webp);
-	background-size: cover;
-	background-position: 50% 0;
-	background-repeat: no-repeat;
-	/* padding-top: 164px; */
-	opacity: 0.7;
-	align-content: center;
-}
-.header__box {
-	display: block;
-	position: absolute;
-	top: 17.5%;
-	left: 0;
-	right: 0;
-	/* bottom: auto; */
-}
-.header__name {
-	font-family: var(--ff-secondary);
-	color: white;
-	font-weight: bolder;
-	font-size: 3rem;
-	text-align: center;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-}
-.header__date {
-	color: white;
-	font-size: 2rem;
-	font-family: var(--ff-primary);
-	text-align: center;
-	line-height: normal;
-	margin: 90% 10% 0 10%;
-	border-top: 3px solid white;
-	border-bottom: 3px solid white;
-	/* margin: 0 10%; */
-	font-weight: bolder;
-}
-/************************************************* Cover *************************************************/
 .cover {
 	position: fixed;
 	top: 0;
@@ -199,6 +152,54 @@ p {
 .cover__destroy {
 	-webkit-animation: puff-out-center 1s cubic-bezier(0.165, 0.84, 0.44, 1) both;
 	animation: puff-out-center 1s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+/************************************************* Header *************************************************/
+.header {
+	background-color: white;
+}
+.header__row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	/* width: 100%; */
+	min-height: 700px;
+	height: 100vh;
+	background-image: url(../images/header.webp);
+	background-size: cover;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	/* padding-top: 164px; */
+	opacity: 0.7;
+	align-content: center;
+}
+.header__box {
+	display: block;
+	position: absolute;
+	top: 17.5%;
+	left: 0;
+	right: 0;
+	/* bottom: auto; */
+}
+.header__name {
+	font-family: var(--ff-secondary);
+	color: white;
+	font-weight: bolder;
+	font-size: 3rem;
+	text-align: center;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.header__date {
+	color: white;
+	font-size: 2rem;
+	font-family: var(--ff-primary);
+	text-align: center;
+	line-height: normal;
+	margin: 90% 10% 0 10%;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	/* margin: 0 10%; */
+	font-weight: bolder;
 }
 
 /************************************************* Header *************************************************/
