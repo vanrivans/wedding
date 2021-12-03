@@ -76,65 +76,65 @@
 
 	function callAnimationDefault() {
 		
-		if (window.scrollY > (secHeader.offsetTop + 300)) {
+		if (window.scrollY > (secHeader.offsetTop + 150)) {
 			$(".header_prolog__content").addClass('scale-in-center');
 		}
 
-		if (window.scrollY > (secHeader.offsetTop + 400)) {
+		if (window.scrollY > (secHeader.offsetTop + 200)) {
 			$(".recipient__name").addClass('text-focus-in');
 		}
 	}
 
 	function callAnimationContent() {
 	
-		if (window.scrollY > (secHeaderProlog.offsetTop + 150)) {
+		if (window.scrollY > (secHeaderProlog.offsetTop + 75)) {
 			$(".content__head__body").addClass('scale-in-center');
 		}
 
-		if (window.scrollY > (secHeaderProlog.offsetTop + 200)) {
+		if (window.scrollY > (secHeaderProlog.offsetTop + 100)) {
 			$("#sec-content-body-p1 .person").addClass('scale-in-center');
 		}
 
-		if (window.scrollY > (secHeaderProlog.offsetTop + 300)) {
+		if (window.scrollY > (secHeaderProlog.offsetTop + 200)) {
 			$("#sec-content-body-p1 .person_name").addClass('slide-in-bottom');
 		}
 
-		if (window.scrollY > (secHeaderProlog.offsetTop + 350)) {
+		if (window.scrollY > (secHeaderProlog.offsetTop + 175)) {
 			$("#sec-content-body-p1 .person_parent").addClass('slide-in-bottom');
 		}
 
-		if (window.scrollY > (secHeaderProlog.offsetTop + 600)) {
+		if (window.scrollY > (secHeaderProlog.offsetTop + 300)) {
 			$("#sec-content-body-p2 .person").addClass('scale-in-center');
 		}
 
-		if (window.scrollY > (secHeaderProlog.offsetTop + 700)) {
+		if (window.scrollY > (secHeaderProlog.offsetTop + 350)) {
 			$("#sec-content-body-p2 .person_name").addClass('slide-in-bottom');
 		}
 
-		if (window.scrollY > (secHeaderProlog.offsetTop + 750)) {
+		if (window.scrollY > (secHeaderProlog.offsetTop + 375)) {
 			$("#sec-content-body-p2 .person_parent").addClass('slide-in-bottom');
 		}
 	}
 
 	function callAnimationRemaining() {
 	
-		if (window.scrollY > (secContentBodyP2.offsetTop + secContentBodyP2.offsetHeight + 1000)) {
+		if (window.scrollY > (secContentBodyP2.offsetTop + secContentBodyP2.offsetHeight + 500)) {
 			$(".remaining__date").addClass('tracking-in-contract');
 		}
 	
-		if (window.scrollY > (secContentBodyP2.offsetTop + secContentBodyP2.offsetHeight + 1050)) {
+		if (window.scrollY > (secContentBodyP2.offsetTop + secContentBodyP2.offsetHeight + 550)) {
 			$("#remaining__col1").addClass('slide-in-bottom');
 		}
 
-		if (window.scrollY > (secContentBodyP2.offsetTop + secContentBodyP2.offsetHeight + 1100)) {
+		if (window.scrollY > (secContentBodyP2.offsetTop + secContentBodyP2.offsetHeight + 600)) {
 			$("#remaining__col2").addClass('slide-in-bottom');
 		}
 
-		if (window.scrollY > (secContentBodyP2.offsetTop + secContentBodyP2.offsetHeight + 1150)) {
+		if (window.scrollY > (secContentBodyP2.offsetTop + secContentBodyP2.offsetHeight + 650)) {
 			$("#remaining__col3").addClass('slide-in-bottom');
 		}
 
-		if (window.scrollY > (secContentBodyP2.offsetTop + secContentBodyP2.offsetHeight + 1200)) {
+		if (window.scrollY > (secContentBodyP2.offsetTop + secContentBodyP2.offsetHeight + 700)) {
 			$("#remaining__btn").addClass('slide-in-bottom');
 		}
 	}
