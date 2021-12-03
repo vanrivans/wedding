@@ -47,4 +47,26 @@ class Home extends MY_Controller
 
 		return view('Home/views/index', $data);
 	}
+
+	public function test()
+	{
+		$nomor = '+6281331326173';
+		$nama = 'Regina Ayu Tiara';
+		$spasi = '+';
+		$titikdua = '%3A';
+		$enter = '%0A';
+		$koma = '%2C';
+		$amp = '%26';
+		$bride = 'Amanda Budi Ksatria dan Tasia Wardantika';
+		$date = 'Ahad, 19 Desember 2021';
+		$place = 'Notosuman Restaurant, Ngawi';
+		$jam = '11.00 - 13.00';
+		$link = 'https://wedding.reginabusiness.id/';
+
+		$text = "Bismillahirahmanirrahim" . $enter . $enter . "Dear Regina Ayu T A" . $enter . $enter . "Assalamu’alaikum wr.wb" . $enter . "Dengan memohon rahmat dan ridho Allah subhanahu wa ta'ala, izinkan kami mengundang Saudara/i untuk hadir dan memberikan doa restu pada acara pernikahan kami," . $enter . $enter . $bride . $enter . "Yang akan diselenggarakan pada : " . $date . " di " . $place . $enter . "Pukul : " . $jam . $enter . "Detail acara: " . $link . $enter . $enter . "Kami memohon kehadiran dan doa restunya agar pernikahan kami mendapatkan ridho dari Allah subhanahu wa ta'ala serta menjadi keluarga yang sakinah, mawaddah, warahmah..." . $enter . "Aamiin Yaa Rabbal'aalamiin" . $enter . "Terima kasih..." . $enter . $enter . "Wassalamu’alaikum wr.wb";
+
+		$data['chat'] = "https://api.whatsapp.com/send/?phone=" . $nomor . "&text=" . $text;
+
+		return view('Home.views.test', $data);
+	}
 }

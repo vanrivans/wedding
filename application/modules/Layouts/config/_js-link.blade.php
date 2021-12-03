@@ -38,6 +38,10 @@
 
 	window.addEventListener("scroll", function() {
 
+		if (window.scrollY > (secContentBodyP2.offsetTop + secContentBodyP2.offsetHeight + 1400)) {
+			$(".event__date").addClass('border-lr');
+		}
+
 		// callAnimationDefault();
 		// callAnimationContent();
 		// callAnimationEvent();
@@ -151,10 +155,6 @@
 
 		if (window.scrollY > (secContentBodyP2.offsetTop + secContentBodyP2.offsetHeight + 1350)) {
 			$(".event__prolog__content").addClass('slide-in-bottom');
-		}
-
-		if (window.scrollY > (secContentBodyP2.offsetTop + secContentBodyP2.offsetHeight + 1400)) {
-			$(".event__date").addClass('border-lr');
 		}
 
 		if (window.scrollY > (secRemaining.offsetTop + 100)) {
