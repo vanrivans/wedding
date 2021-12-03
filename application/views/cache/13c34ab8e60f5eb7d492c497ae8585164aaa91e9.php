@@ -2,6 +2,15 @@
 	<div class="row">
 
 		<div class="col-xs-12">
+
+			<div class="row event__border">
+				<div class="col-6 col-br-l">
+					<img src="<?php echo e(base_url('assets/template/br-top-l.png')); ?>" style="width:100%;height:100%">
+				</div>
+				<div class="col-6 col-br-r">
+					<img src="<?php echo e(base_url('assets/template/br-top-r.png')); ?>" style="width:100%;height:100%">
+				</div>
+			</div>
 			
 			<div class="event__prolog" id="sec-event-prolog">
 				
@@ -40,9 +49,8 @@
 					<?php echo e($akadAddress); ?>
 
 				</p>
-				<a href="<?php echo e($akadLoc); ?>" target="_blank">
-					<button class="btn"><span class="btn__inner btn_maps">Lihat Maps</span>
-					</button>
+				<a href="<?php echo e($akadLoc); ?>" target="_blank" class="btn">
+					<span class="btn__inner btn_maps">Lihat Maps</span>
 				</a>
 
 			</div>
@@ -68,14 +76,24 @@
 					<?php echo e($resepsiAddress); ?>
 
 				</p>
-				<a href="<?php echo e($resepsiLoc); ?>" target="_blank">
-					<button class="btn">
-						<span class="btn__inner btn_maps">Lihat Maps</span>
-					</button>
+				<a href="<?php echo e($resepsiLoc); ?>" target="_blank" class="btn">
+					<span class="btn__inner btn_maps">Lihat Maps</span>
 				</a>
 
 			</div>
 
+		</div>
+
+		<div class="col-xs-12">
+
+			<div class="row event__border">
+				<div class="col-6 col-br-l">
+					<img src="<?php echo e(base_url('assets/template/br-bot-l.png')); ?>" style="width:100%;height:100%">
+				</div>
+				<div class="col-6 col-br-r">
+					<img src="<?php echo e(base_url('assets/template/br-bot-r.png')); ?>" style="width:100%;height:100%">
+				</div>
+			</div>
 		</div>
 
 	</div>

@@ -17,18 +17,16 @@
 {{-- Define main --}}
 @section('main')
 	
-	@include('Home.views.partial_detail.recipient')
+	<section class="recipient" id="sec-recipient">
+		@include('Home.views.partial_detail.recipient')
+	</section>
 
 	<section class="content">
 		@include('Home.views.partial_detail.content')
 	</section>
 
 	<section class="remaining" id="sec-remaining">
-		{{-- <div class="row">
-			<div class="col-xs-12">
-				<a href="http://www.google.com/calendar/render?action=TEMPLATE&amp;text=Hendrasta+%26+Kharida+Wedding&amp;dates=20211120T070000/20211120T080000&amp;details=Kehadiran+You%27re+Invited+to+our+wedding+ceremony+%7C+Hendrasta+%26+Kharida+Wedding+%7C+Saturday%2C+20+November+2021" target="_blank" rel="nofollow">Add to Calendar</a>
-			</div>
-		</div> --}}
+		@include('Home.views.partial_detail.remaining')
 	</section>
 
 	<section class="event">

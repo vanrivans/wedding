@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '0ae65b328cba89bee119560ea25e98c668ccbd52',
+        'reference' => '50db6f5e9c9e440cd589a10d81131f8cc484e585',
         'name' => 'codeigniter/framework',
         'dev' => true,
     ),
     'versions' => array(
         'codeigniter/framework' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '0ae65b328cba89bee119560ea25e98c668ccbd52',
+            'reference' => '50db6f5e9c9e440cd589a10d81131f8cc484e585',
             'dev_requirement' => false,
         ),
         'components/jquery' => array(
@@ -476,18 +476,18 @@
             'dev_requirement' => true,
         ),
         'twbs/bootstrap' => array(
-            'pretty_version' => 'v5.0.2',
-            'version' => '5.0.2.0',
+            'pretty_version' => 'v5.1.3',
+            'version' => '5.1.3.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../twbs/bootstrap',
             'aliases' => array(),
-            'reference' => '688bce4fa695cc360a0d084e34f029b0c192b223',
+            'reference' => '1a6fdfae6be09b09eaced8f0e442ca6f7680a61e',
             'dev_requirement' => false,
         ),
         'twitter/bootstrap' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => 'v5.0.2',
+                0 => 'v5.1.3',
             ),
         ),
         'voku/portable-ascii' => array(

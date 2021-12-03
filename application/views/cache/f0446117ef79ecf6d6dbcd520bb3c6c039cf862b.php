@@ -13,14 +13,16 @@
 
 <?php $__env->startSection('main'); ?>
 	
-	<?php echo $__env->make('Home.views.partial_detail.recipient', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+	<section class="recipient" id="sec-recipient">
+		<?php echo $__env->make('Home.views.partial_detail.recipient', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+	</section>
 
 	<section class="content">
 		<?php echo $__env->make('Home.views.partial_detail.content', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 	</section>
 
 	<section class="remaining" id="sec-remaining">
-		
+		<?php echo $__env->make('Home.views.partial_detail.remaining', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 	</section>
 
 	<section class="event">
