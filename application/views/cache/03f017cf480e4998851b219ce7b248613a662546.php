@@ -5,17 +5,17 @@
 
 <script type="text/javascript">
 
-	// var secHeader 			= document.getElementById("sec-header");
-	// var secHeaderProlog 	= document.getElementById("sec-header-prolog");
-	// var secRecipient 		= document.getElementById("sec-header-recipient");
-	// var secContentHead 		= document.getElementById("sec-content-head");
-	// var secContentBodyP1 	= document.getElementById("sec-content-body-p1");
-	// var secContentBodyP2 	= document.getElementById("sec-content-body-p2");
-	// var secRemaining 		= document.getElementById("sec-remaining");
-	// var secEventProlog 		= document.getElementById("sec-event-prolog");
-	// var secEventDate 		= document.getElementById("sec-event-date");
-	// var secEventAkad 		= document.getElementById("sec-event-akad");
-	// var secEventResepsi 	= document.getElementById("sec-event-resepsi");
+	var secHeader 			= document.getElementById("sec-header");
+	var secHeaderProlog 	= document.getElementById("sec-header-prolog");
+	var secRecipient 		= document.getElementById("sec-header-recipient");
+	var secContentHead 		= document.getElementById("sec-content-head");
+	var secContentBodyP1 	= document.getElementById("sec-content-body-p1");
+	var secContentBodyP2 	= document.getElementById("sec-content-body-p2");
+	var secRemaining 		= document.getElementById("sec-remaining");
+	var secEventProlog 		= document.getElementById("sec-event-prolog");
+	var secEventDate 		= document.getElementById("sec-event-date");
+	var secEventAkad 		= document.getElementById("sec-event-akad");
+	var secEventResepsi 	= document.getElementById("sec-event-resepsi");
 
 	$(document).ready( function () {
 
