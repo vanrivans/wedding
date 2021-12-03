@@ -472,6 +472,9 @@ p {
 	padding-right: 0 !important;
 	text-align: center;
 }
+.absent__col {
+	padding: 0 15%;
+}
 .absent__title {
 	font-family: var(--ff-primary);
 	color: var(--clr-secondary);
