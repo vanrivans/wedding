@@ -51,6 +51,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 */
 $route['default_controller'] 	= 'Home/index';
 
+$route['home/test'] 			= 'Home/test';
 $route['githubupdate']			= 'Githubupdate/index';
 
 $route['404_override'] 			= '';
