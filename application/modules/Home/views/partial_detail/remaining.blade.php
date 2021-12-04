@@ -1,14 +1,14 @@
 
 	<div class="row remaining__row">
 		<div class="col">
-			<img src="{{ base_url('assets/template/mark-l.png') }}" class="remaining__mark mark-l">
+			<img src="{{ base_url('assets/templates/mark-l.png') }}" class="remaining__mark mark-l">
 			<div class="remaining__title">
 				Catat Tanggalnya
 			</div>
 			<div class="remaining__date">
 				{{ $resepsiDate }}
 			</div>
-			<img src="{{ base_url('assets/template/mark-r.png') }}" class="remaining__mark mark-r">
+			<img src="{{ base_url('assets/templates/mark-r.png') }}" class="remaining__mark mark-r">
 		</div>
 		<div class="col-12" style="margin:5% 0">
 			<div class="row">

@@ -3,6 +3,8 @@
 
 <script src="{{ base_url('vendor/twbs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 
+<script src="{{ base_url('assets/plugins/lazysizes/lazysizes.min.js') }}"></script>
+
 <script type="text/javascript">
 
 	var secHeader 			= document.getElementById("sec-header");
@@ -209,6 +211,33 @@
 		$('body').css('overflow-y', 'scroll');
 
 		$(".cover").css('z-index', 0);
+
+		togglePlay();
+	});
+
+	var myAudio = document.getElementById("song");
+	var isPlaying = false;
+
+	function togglePlay() {
+		if (isPlaying === true) {
+			myAudio.pause();
+			$('.icons-song').removeClass('bi-pause-circle').addClass('bi-play-circle');
+		} else {
+			myAudio.play();
+			$('.icons-song').removeClass('bi-play-circle').addClass('bi-pause-circle');
+		}
+	};
+
+	myAudio.onplaying = function() {
+		isPlaying = true;
+	};
+	myAudio.onpause = function() {
+		isPlaying = false;
+	};
+
+	$(".pause-song").on('click', function () {
+
+		togglePlay();
 	});
 	
 

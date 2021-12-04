@@ -28,6 +28,7 @@ $CI = &get_instance();
     <meta property="og:url" content="<?= empty($Url) ? '' : $Url; ?>" />
     <meta property="og:title" content="<?= empty($PageTitle) ? '' : $PageTitle; ?>" />
     <meta property="og:site_name" content="<?= empty($SiteName) ? '' : $SiteName; ?>" />
+	<meta property="og:image" content="<?= empty($Image) ? '' : $Image; ?>">
 
     <title><?= empty($PageTitle) ? '' : $PageTitle; ?></title>
 
@@ -39,6 +40,41 @@ $CI = &get_instance();
 
 </head>
 <body style="overflow-x:hidden">
+
+	<nav class="navbar fixed-bottom">
+		<ul class="container-fluid m-0">
+			<li class="">
+				<a class="" aria-current="page" href="#">
+					<i class="bi bi-house-fill d-block"></i>
+					Home
+				</a>
+			</li>
+			<li class="">
+				<a class="" aria-current="page" href="#sec-content">
+					<i class="bi bi-heart-fill d-block"></i>
+					Couple
+				</a>
+			</li>
+			<li class="">
+				<a class="" aria-current="page" href="#sec-event">
+					<i class="bi bi-calendar-event-fill d-block"></i>
+					Event
+				</a>
+			</li>
+			<li class="">
+				<a class="" aria-current="page" href="#sec-galleries">
+					<i class="bi bi-camera-fill d-block"></i>
+					Galleries
+				</a>
+			</li>
+			<li class="">
+				<a class="" aria-current="page" href="#sec-wishes">
+					<i class="bi bi-chat-text d-block"></i>
+					Wishes
+				</a>
+			</li>
+		</ul>
+	</nav>
 
 	{{-- Cover --}}
 	<section class="cover">
@@ -63,6 +99,13 @@ $CI = &get_instance();
         </div>
 
     </div>
+
+	<audio id="song" preload="auto">
+		<source src="{{ $Song }}" type="audio/mp3">
+	</audio>
+	<div class="pause-song">
+		<i class="bi bi-pause-circle icons-song"></i>
+	</div>
 
     {{-- Footer --}}
     @include('Layouts.config._footer')

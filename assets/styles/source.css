@@ -28,6 +28,8 @@ p {
 	border-radius: 0.5rem;
 	box-shadow: 0px 2px 2px rgb(127 112 63 / 50%);
 	color: black !important;
+	font-size: 14px;
+	font-family: var(--ff-primary);
 }
 .btn__inner {
 	font-family: var(--ff-primary);
@@ -88,6 +90,28 @@ p {
 .mark-r {
 	right: 0;
 }
+.pl-0 {
+	padding-left: 0 !important;
+}
+.pr-0 {
+	padding-right: 0 !important;
+}
+.w-100 {
+	width: 100%;
+}
+.text-center {
+	text-align: center;
+}
+.pause-song {
+	position: fixed;
+	z-index: 2;
+	bottom: 9%;
+	right: 5%;
+}
+.icons-song {
+	font-size: 30px !important;
+	color: var(--clr-secondary);
+}
 
 /************************************************* Cover *************************************************/
 .cover {
@@ -96,7 +120,7 @@ p {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 2;
+	z-index: 3;
 	background: linear-gradient(
 		to bottom,
 		rgba(0, 0, 0, 0.8),
@@ -174,7 +198,7 @@ p {
 	/* width: 100%; */
 	min-height: 700px;
 	height: 100vh;
-	background-image: url(../images/header.webp);
+	background-image: url(../images/header_mobile.webp);
 	background-size: cover;
 	background-position: 50% 0;
 	background-repeat: no-repeat;
@@ -424,7 +448,7 @@ p {
 .event__resepsi {
 	display: block;
 	position: relative;
-	padding: 5%;
+	padding: 5% 5% 10% 5%;
 	text-align: center;
 	font-family: var(--ff-primary);
 }
@@ -480,13 +504,16 @@ p {
 	color: var(--clr-secondary);
 	font-weight: bolder;
 	font-size: 1.5rem;
-	padding: 5% 5% 10% 5%;
+	padding: 0% 5% 5% 5%;
 }
 .btn-absent-y,
 .btn-absent-n {
 	background-color: #eaeaea !important;
 	box-shadow: 0px 2px 2px gray !important;
-	color: black !important;
+}
+.btn-absent-y > .btn__inner,
+.btn-absent-n > .btn__inner {
+	color: #777 !important;
 }
 .btn-absent-y.active {
 	background-color: var(--clr-green) !important;
@@ -495,4 +522,210 @@ p {
 .btn-absent-n.active {
 	background-color: var(--clr-red) !important;
 	box-shadow: 0px 2px 2px rgb(255 0 0 / 50%) !important;
+}
+.btn-absent-y.active > .btn__inner,
+.btn-absent-n.active > .btn__inner {
+	color: white !important;
+}
+.col-absent-text {
+	padding: 3px 0;
+	text-align: center;
+}
+.absent__text {
+	font-family: var(--ff-primary);
+	color: var(--clr-secondary);
+	font-weight: bolder;
+}
+
+/************************************************* Galleries *************************************************/
+.galleries {
+	display: block;
+	position: relative;
+	padding: 10% 5% 10% 5%;
+}
+.galleries__mark {
+	display: block;
+	width: 100px;
+	height: auto;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+.galleries__row {
+	margin: 0 !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	text-align: center;
+}
+.galleries__col {
+	padding: 0 15%;
+}
+.galleries__title {
+	font-family: var(--ff-primary);
+	color: var(--clr-secondary);
+	font-weight: bolder;
+	font-size: 1.5rem;
+	padding: 10% 5% 5% 5%;
+	/* border: 2px solid var(--clr-secondary); */
+	/* border-radius: 50% 50%; */
+}
+.galleries__row2 {
+	padding: 0 5% 5% 5%;
+}
+.galleries__col2 {
+	padding: 1%;
+}
+.galleries__image {
+	width: 100%;
+}
+
+/************************************************* Health Protocol *************************************************/
+.health_protocol {
+	display: block;
+	position: relative;
+	padding: 5% 5% 10% 5%;
+}
+.health_protocol__mark {
+	display: block;
+	width: 100px;
+	height: auto;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+.health_protocol__row {
+	margin: 0 !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	text-align: center;
+}
+.health_protocol__col {
+	padding: 0 15%;
+}
+.health_protocol__title {
+	font-family: var(--ff-primary);
+	color: var(--clr-secondary);
+	font-weight: bolder;
+	font-size: 1.5rem;
+	padding: 5%;
+}
+.health_protocol__row2 {
+	padding: 5%;
+}
+.health_protocol__text {
+	font-family: var(--ff-primary);
+	font-size: 14px;
+	line-height: normal;
+	text-align: center;
+}
+.health_protocol__icons {
+	width: 25px;
+	height: auto;
+}
+.health_protocol__icons__desc {
+	font-family: var(--ff-primary);
+	font-size: 14px;
+	color: var(--clr-secondary);
+	font-weight: bolder;
+}
+.health_protocol__col__icons {
+	text-align: center;
+	line-height: 1;
+	padding: 2.5%;
+}
+.health_protocol__row2 {
+	padding: 0 5%;
+}
+
+/************************************************* Wishes *************************************************/
+.wishes {
+	display: block;
+	position: relative;
+	padding: 5%;
+}
+.wishes__mark {
+	display: block;
+	width: 100px;
+	height: auto;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+.wishes__row {
+	margin: 0 !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	text-align: center;
+}
+.wishes__col {
+	padding: 0 15%;
+}
+.wishes__title {
+	font-family: var(--ff-primary);
+	color: var(--clr-secondary);
+	font-weight: bolder;
+	font-size: 1.5rem;
+	padding: 5% 5% 10% 5%;
+}
+.wishes__row2 {
+	padding: 5%;
+}
+.wishes__row__comment {
+	padding: 5% 0 0 0;
+}
+.wishes__text {
+	font-family: var(--ff-primary);
+	color: #777;
+	font-size: 14px;
+}
+.wishes__icon {
+	font-size: 30px;
+	color: #999;
+}
+.wishes__person {
+	font-family: var(--ff-primary);
+	color: var(--clr-secondary);
+	font-size: 14px;
+	font-weight: bolder;
+}
+.wishes__comment {
+	font-family: var(--ff-primary);
+	color: black;
+	font-size: 14px;
+	line-height: normal;
+}
+
+/************************************************* Footer *************************************************/
+.footer {
+	display: block;
+	position: relative;
+	padding: 10% 5%;
+	margin-bottom: 20%;
+}
+.footer__text {
+	font-family: var(--ff-primary);
+	text-align: center;
+	font-style: italic;
+}
+.footer__name {
+	font-family: var(--ff-secondary);
+	font-size: 2.5rem;
+	color: var(--clr-secondary);
+	text-align: center;
+	font-weight: bolder;
+	padding: 5%;
+}
+
+/************************************************* FNavbar *************************************************/
+nav {
+	background-color: var(--clr-secondary);
+	z-index: 2 !important;
+}
+ul.container-fluid {
+	list-style: none;
+	font-size: 14px;
+}
+nav > ul > li > a {
+	color: white !important;
+	text-align: center;
 }

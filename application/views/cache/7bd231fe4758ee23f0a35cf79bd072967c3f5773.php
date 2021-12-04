@@ -18,7 +18,7 @@
 	</div>
 	<div class="cover__btn">
 		<button class="btn" id="btn-cover">
-			<span class="btn__inner">Buka Undangan</span>
+			<span class="btn__inner" style="font-size:18px">Buka Undangan</span>
 		</button>
 	</div>
 </div>

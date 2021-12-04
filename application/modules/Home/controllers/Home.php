@@ -45,6 +45,15 @@ class Home extends MY_Controller
 
 		$data['recipient']			= 'Regina Ayutiara Anmar';
 
+		$data['Author']				= 'Digital By Ree';
+		$data['MetaKeywords']		= '';
+		$data['MetaDescription']	= 'You\'re Invited to our wedding ceremony - ' . $data['brideName1'] . ' & ' . $data['brideName2'] . ' Wedding - ' . $data['resepsiDay'] . ', ' . $data['resepsiDate'];
+		$data['Url']				= 'https://wedding.reginabusiness.id/';
+		$data['PageTitle']			= $data['brideName1'] . ' & ' . $data['brideName2'] . ' | ' . $data['Author'];
+		$data['SiteName']			= $data['PageTitle'];
+		$data['Image']				= base_url('assets/images/cover_mobile.webp');
+		$data['Song']				= base_url('assets/songs/Beautiful-In-White-Sha-auda.mp3');
+
 		return view('Home/views/index', $data);
 	}
 
