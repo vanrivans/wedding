@@ -112,6 +112,20 @@ p {
 	font-size: 30px !important;
 	color: var(--clr-secondary);
 }
+.copyright {
+	display: block;
+	position: relative;
+	margin-bottom: 20%;
+	text-align: center;
+	font-size: 14px;
+}
+.watermark {
+	display: block;
+	position: absolute;
+	z-index: 4;
+	right: 0;
+	top: 0;
+}
 
 /************************************************* Cover *************************************************/
 .cover {
@@ -700,7 +714,7 @@ p {
 	display: block;
 	position: relative;
 	padding: 10% 5%;
-	margin-bottom: 20%;
+	/* margin-bottom: 20%; */
 }
 .footer__text {
 	font-family: var(--ff-primary);
