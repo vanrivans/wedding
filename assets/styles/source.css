@@ -691,6 +691,12 @@ p {
 	font-family: var(--ff-primary);
 	color: #777;
 	font-size: 14px;
+	border-color: var(--clr-secondary);
+}
+.wishes__text:focus,
+.wishes__text:hover {
+	border-color: var(--clr-secondary);
+	box-shadow: 0 0 0 0.25rem rgb(127 112 63 / 50%);
 }
 .wishes__icon {
 	font-size: 30px;

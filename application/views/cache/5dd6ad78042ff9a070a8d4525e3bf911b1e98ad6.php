@@ -104,7 +104,7 @@ $CI = &get_instance();
 		<div class="row">
 			<div class="col-12">
 				<small class="d-block">Copyright © Digital by REE All rights reserved.</small>
-				<a href="https://instagram.com/digitalbyree" class="d-block mb-2">
+				<a href="https://instagram.com/digitalbyree" target="_blank" class="d-block mb-2">
 					<i class="bi bi-instagram"></i> Digital by REE
 				</a>
 				<img src="<?php echo e(base_url('assets/logo/logo.png')); ?>" width="50" height="50">
