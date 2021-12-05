@@ -17,27 +17,27 @@
 		</div>
 		<div class="col-12">
 			<div class="row" style="padding:5%">
-				<div class="col-6 health_protocol__col__icons">
+				<div class="col-6 col-md-4 health_protocol__col__icons">
 					<img src="{{ base_url('assets/icons/temperature-low-solid.svg') }}" class="health_protocol__icons"><br>
 					<span class="health_protocol__icons__desc">Tidak demam</span>
 				</div>
-				<div class="col-6 health_protocol__col__icons">
+				<div class="col-6 col-md-4 health_protocol__col__icons">
 					<img src="{{ base_url('assets/icons/people-arrows-solid.svg') }}" class="health_protocol__icons"><br>
 					<span class="health_protocol__icons__desc">Menjaga jarak</span>
 				</div>
-				<div class="col-6 health_protocol__col__icons">
+				<div class="col-6 col-md-4 health_protocol__col__icons">
 					<img src="{{ base_url('assets/icons/head-side-mask-solid.svg') }}" class="health_protocol__icons"><br>
 					<span class="health_protocol__icons__desc">Memakai masker</span>
 				</div>
-				<div class="col-6 health_protocol__col__icons">
+				<div class="col-6 col-md-4 health_protocol__col__icons">
 					<img src="{{ base_url('assets/icons/handshake-alt-slash-solid.svg') }}" class="health_protocol__icons"><br>
 					<span class="health_protocol__icons__desc">Tidak berjabat tangan</span>
 				</div>
-				<div class="col-6 health_protocol__col__icons">
+				<div class="col-6 col-md-4 health_protocol__col__icons">
 					<img src="{{ base_url('assets/icons/hands-wash-solid.svg') }}" class="health_protocol__icons"><br>
 					<span class="health_protocol__icons__desc">Mencuci tangan</span>
 				</div>
-				<div class="col-6 health_protocol__col__icons">
+				<div class="col-6 col-md-4 health_protocol__col__icons">
 					<img src="{{ base_url('assets/icons/hand-holding-medical-solid.svg') }}" class="health_protocol__icons"><br>
 					<span class="health_protocol__icons__desc">Menggunakan hand sanitizer</span>
 				</div>

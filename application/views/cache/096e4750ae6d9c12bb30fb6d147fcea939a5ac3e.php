@@ -1,4 +1,4 @@
-
+	
     <div class="row absent__row">
         <div class="col">
             

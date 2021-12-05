@@ -6,4 +6,6 @@
 
 <link href="<?php echo e(base_url('assets/styles/animation.css')); ?>" rel="stylesheet">
 <link href="<?php echo e(base_url('assets/styles/source.css')); ?>" rel="stylesheet">
+<link href="<?php echo e(base_url('assets/styles/source-desktop.css')); ?>" rel="stylesheet">
+<link href="<?php echo e(base_url('assets/styles/source-tablet.css')); ?>" rel="stylesheet">
 <?php /**PATH E:\xampp\htdocs\wedding\application\modules/Layouts/config/_css-link.blade.php ENDPATH**/ ?>

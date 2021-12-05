@@ -2,7 +2,7 @@
 	<div class="row">
 
 		<div class="col-xs-12">
-
+			<center>
 			<div class="row event__border">
 				<div class="col-6 col-br-l">
 					<img src="{{ base_url('assets/templates/br-top-l.png') }}" style="width:100%;height:100%">
@@ -11,7 +11,8 @@
 					<img src="{{ base_url('assets/templates/br-top-r.png') }}" style="width:100%;height:100%">
 				</div>
 			</div>
-			
+			</center>
+			<center>
 			<div class="event__prolog" id="sec-event-prolog">
 				
 				<div class="event__prolog__title title_style">
@@ -21,17 +22,20 @@
 					Untuk melaksanakan syariat agama-Mu, mengikuti sunnah rasul-Mu dalam membentuk keluarga yang Sakinah, Mawaddah, Warahmah yang Insya Allah akan diselenggarakan pada hari:
 				</p>
 			</div>
+			</center>
 		</div>
 
 		<div class="col-xs-12">
+			<center>
 			<div class="event__date title_style" id="sec-event-date">
 				<span>{{ $resepsiDay }}</span><br>
 				<span>{{ $resepsiDate }}</span>
 			</div>
+			</center>
 		</div>
 
-		<div class="col-xs-12">
-
+		<div class="col-xs-12 col-md-6">
+			<center>
 			<div class="event__akad" id="sec-event-akad">
 
 				<div class="event__akad__title title_style">
@@ -51,11 +55,11 @@
 				</a>
 
 			</div>
-
+			</center>
 		</div>
 
-		<div class="col-xs-12">
-
+		<div class="col-xs-12 col-md-6">
+			<center>
 			<div class="event__resepsi" id="sec-event-resepsi">
 
 				<div class="event__resepsi__title title_style">
@@ -75,11 +79,11 @@
 				</a>
 
 			</div>
-
+			</center<>
 		</div>
 
 		<div class="col-xs-12">
-
+			<center>
 			<div class="row event__border">
 				<div class="col-6 col-br-l">
 					<img src="{{ base_url('assets/templates/br-bot-l.png') }}" style="width:100%;height:100%">
@@ -88,6 +92,7 @@
 					<img src="{{ base_url('assets/templates/br-bot-r.png') }}" style="width:100%;height:100%">
 				</div>
 			</div>
+			</center>
 		</div>
 
 	</div>

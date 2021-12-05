@@ -1,0 +1,244 @@
+@media screen and (min-width: 1024px) {
+	.btn {
+		font-size: 22.5px;
+	}
+	.watermark {
+		width: 100px !important;
+		height: 100px !important;
+	}
+	.cover__box__name {
+		top: 35%;
+		font-size: 4rem;
+	}
+	.cover__opening {
+		font-size: 4rem;
+	}
+	.cover__to {
+		font-size: 2.5rem;
+	}
+	.cover__btn > .btn > .btn__inner {
+		font-size: 1.5rem !important;
+	}
+	.navbar {
+		justify-content: center !important;
+	}
+	.navbar > .container-fluid {
+		max-width: 600px !important;
+	}
+	.icons-song {
+		font-size: 3rem !important;
+	}
+	ul.container-fluid {
+		font-size: 1.375rem;
+	}
+	ul.container-fluid > li > a > i {
+		font-size: 25px;
+	}
+	.header__row {
+		background-image: url(../images/header_desktop.jpg) !important;
+	}
+	.header__name {
+		font-size: 5rem !important;
+	}
+	.header__date {
+		margin: 30% 30% 0 30% !important;
+	}
+	.header_prolog__content {
+		font-size: 22.5px !important;
+	}
+	.header_prolog {
+		padding: 5% !important;
+	}
+	.recipient {
+		padding: 2.5% !important;
+	}
+	.recipient__text {
+		font-size: 24px !important;
+	}
+	.content {
+		padding: 5% !important;
+	}
+	.content__head__title {
+		padding: 2.5% 0 !important;
+		font-size: 2.5rem !important;
+	}
+	.content__head__body {
+		font-size: 22.5px !important;
+	}
+	.arabic {
+		font-size: 30px !important;
+	}
+	.content__body {
+		padding: 0 !important;
+	}
+	.person,
+	.person__image {
+		width: 300px !important;
+		height: 300px !important;
+	}
+	.person_name {
+		padding: 0 0 2.5% 0 !important;
+	}
+	.person_name_style {
+		font-size: 3.5rem !important;
+	}
+	.person_ig > a > span,
+	.person_ig > a > span > .bi {
+		font-size: 1.5rem !important;
+	}
+	.person_parent {
+		font-size: 22.5px !important;
+	}
+	.content__body__separator {
+		padding: 3.5% 2.5% 0 2.5%;
+	}
+	.content__body__separator__style {
+		font-size: 7rem !important;
+	}
+	.remaining {
+		padding: 0 !important;
+	}
+	.remaining__mark,
+	.wishes__mark {
+		width: 250px !important;
+	}
+	.remaining__title {
+		font-size: 3rem !important;
+	}
+	.remaining__date {
+		font-size: 3rem !important;
+	}
+	.btn-add-to-calendar {
+		font-size: 22.5px !important;
+	}
+	.remaining__row2 {
+		max-width: 600px !important;
+	}
+	.remaining__box {
+		width: 140px !important;
+		height: 110px !important;
+	}
+	.remaining__time {
+		font-size: 2.25rem !important;
+	}
+	.remaining__text {
+		font-size: 1.875rem !important;
+	}
+	.event {
+		padding: 5% !important;
+	}
+	.event__prolog__title {
+		padding: 5% !important;
+		font-size: 3rem !important;
+	}
+	.event__prolog__content {
+		font-size: 22.5px !important;
+	}
+	.event__date {
+		padding: 2.5% !important;
+		/* margin: 0 !important; */
+		font-size: 2rem !important;
+	}
+	/* .event__akad,
+	.event__resepsi {
+		padding: 2.5% !important;
+	} */
+	.title_style {
+		font-size: 2rem !important;
+	}
+	.event__akad__time,
+	.event__resepsi__time {
+		font-size: 22.5px !important;
+		padding: 2.5% !important;
+	}
+	.event__akad__place,
+	.event__resepsi__place {
+		padding: 0 2.5% !important;
+		font-size: 22.5px !important;
+	}
+	.event__akad__address,
+	.event__resepsi__address {
+		font-size: 22.5px !important;
+	}
+	.btn_maps {
+		font-size: 22.5px !important;
+	}
+	.absent {
+		padding: 2.5% !important;
+	}
+	.absent__title {
+		font-size: 2rem !important;
+		padding: 2.5% !important;
+	}
+	.btn-absent,
+	#btn-absent-submit {
+		font-size: 22.5px !important;
+	}
+	.galleries {
+		padding: 5% !important;
+	}
+	.galleries__title {
+		padding: 5% !important;
+		font-size: 2rem !important;
+	}
+	.galleries__row2 {
+		padding: 0 2.5% !important;
+	}
+	.health_protocol {
+		padding: 5% !important;
+	}
+	.health_protocol__title {
+		padding: 2.5% !important;
+		font-size: 2rem !important;
+	}
+	.health_protocol__text {
+		font-size: 22.5px !important;
+	}
+	.health_protocol__col__icons {
+		padding: 1% !important;
+	}
+	.health_protocol__icons {
+		width: 50px !important;
+	}
+	.health_protocol__icons__desc {
+		font-size: 22.5px !important;
+	}
+	.wishes__title {
+		padding: 5% !important;
+		font-size: 2rem !important;
+	}
+	.wishes__row2 {
+		padding: 0 !important;
+	}
+	.wishes__icon {
+		font-size: 60px !important;
+	}
+	.wishes__text,
+	.wishes__person,
+	.wishes__comment {
+		font-size: 22.5px !important;
+		text-align: left !important;
+	}
+	.footer {
+		padding: 5% !important;
+	}
+	.footer__text {
+		font-size: 22.5px !important;
+		margin-bottom: 10% !important;
+	}
+	.footer__name {
+		padding: 0 !important;
+		font-size: 4.5rem !important;
+	}
+	.copyright {
+		font-size: 22.5px !important;
+		margin-bottom: 10% !important;
+	}
+	.img-logo {
+		width: 100px !important;
+		height: 100px !important;
+	}
+	.footer__border {
+		margin: 0 !important;
+	}
+}

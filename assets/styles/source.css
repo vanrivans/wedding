@@ -258,6 +258,7 @@ p {
 	color: black;
 	line-height: normal;
 	text-align: center;
+	max-width: 1000px !important;
 }
 
 /************************************************* Recipient *************************************************/
@@ -299,6 +300,7 @@ p {
 	display: block;
 	position: relative;
 	padding: 10% 10% 0 10%;
+	max-width: 1000px !important;
 }
 .content__body__person {
 	display: block;
@@ -431,14 +433,17 @@ p {
 	position: relative;
 	padding: 10% 5% 10% 5%;
 	text-align: center;
+	max-width: 1000px !important;
 }
 .event__border {
 	margin-top: 5%;
+	max-width: 1000px;
 }
 .event__prolog {
 	display: block;
 	position: relative;
 	padding: 0 5%;
+	max-width: 1000px !important;
 }
 .event__prolog__title {
 	padding: 10% 5% 5% 5%;
@@ -457,6 +462,7 @@ p {
 	padding: 5%;
 	line-height: normal;
 	margin: 5%;
+	max-width: 800px !important;
 }
 .event__akad,
 .event__resepsi {
@@ -465,6 +471,7 @@ p {
 	padding: 5% 5% 10% 5%;
 	text-align: center;
 	font-family: var(--ff-primary);
+	max-width: 800px !important;
 }
 .event__akad__title,
 .event__resepsi__title {
@@ -495,6 +502,7 @@ p {
 	display: block;
 	position: relative;
 	padding: 5%;
+	max-width: 800px !important;
 }
 .absent__mark {
 	display: block;
@@ -585,6 +593,7 @@ p {
 }
 .galleries__row2 {
 	padding: 0 5% 5% 5%;
+	max-width: 1000px !important;
 }
 .galleries__col2 {
 	padding: 1%;
@@ -597,7 +606,8 @@ p {
 .health_protocol {
 	display: block;
 	position: relative;
-	padding: 5% 5% 10% 5%;
+	padding: 5% 5% 15% 5%;
+	max-width: 1000px !important;
 }
 .health_protocol__mark {
 	display: block;
@@ -670,6 +680,7 @@ p {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 	text-align: center;
+	max-width: 1000px !important;
 }
 .wishes__col {
 	padding: 0 15%;
@@ -683,6 +694,7 @@ p {
 }
 .wishes__row2 {
 	padding: 5%;
+	max-width: 1000px !important;
 }
 .wishes__row__comment {
 	padding: 5% 0 0 0;
@@ -714,12 +726,18 @@ p {
 	font-size: 14px;
 	line-height: normal;
 }
+.wishes__text,
+.wishes__person,
+.wishes__comment {
+	text-align: left !important;
+}
 
 /************************************************* Footer *************************************************/
 .footer {
 	display: block;
 	position: relative;
 	padding: 10% 5%;
+	max-width: 1000px !important;
 	/* margin-bottom: 20%; */
 }
 .footer__text {

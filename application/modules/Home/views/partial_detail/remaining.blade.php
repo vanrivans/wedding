@@ -11,7 +11,8 @@
 			<img src="{{ base_url('assets/templates/mark-r.png') }}" class="remaining__mark mark-r">
 		</div>
 		<div class="col-12" style="margin:5% 0">
-			<div class="row">
+			<center>
+			<div class="row remaining__row2">
 				<div class="col remaining__col" id="remaining__col1">
 					<center>
 					<div class="remaining__box">
@@ -37,6 +38,7 @@
 					</center>
 				</div>
 			</div>
+			</center>
 		</div>
 		<div class="col-12" id="remaining__btn">
 			<a href="http://www.google.com/calendar/render?action=TEMPLATE&amp;text=Hendrasta+%26+Kharida+Wedding&amp;dates=20211120T070000/20211120T080000&amp;details=Kehadiran+You%27re+Invited+to+our+wedding+ceremony+%7C+Hendrasta+%26+Kharida+Wedding+%7C+Saturday%2C+20+November+2021" target="_blank" rel="nofollow" class="btn">

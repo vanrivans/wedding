@@ -14,20 +14,21 @@
 		</div>
 
 	</section>
-
+	<center>
 	<section class="header_prolog" id="sec-header-prolog">
 		
 		<div class="row">
 			<div class="col-xs-12">
 				
-				<div>بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div><br>
-				<div> وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ </div>
+				<div class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div><br>
+				<div class="arabic"> وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ </div>
 				<br>
 				<p class="header_prolog__content">"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untumu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya. dan Dia menjadikan di antaramu rasa kasih dan sayang.<br>(Ar-rum: 21)"</p>
 			</div>
 		</div>
 
 	</section>
+	</center>
 
 @endsection
 
@@ -46,28 +47,37 @@
 		@include('Home.views.partial_detail.remaining')
 	</section>
 
+	<center>
 	<section class="event" id="sec-event">
 		@include('Home.views.partial_detail.event')
 	</section>
+	</center>
 
+	<center>
 	<section class="absent">
 		@include('Home.views.partial_detail.absent')
 	</section>
+	</center>
 
 	<section class="galleries" id="sec-galleries">
 		@include('Home.views.partial_detail.galleries')
 	</section>
 
+	<center>
 	<section class="health_protocol">
 		<div class="col-12" style="border: 2px solid var(--clr-secondary)">
 			@include('Home.views.partial_detail.health_protocol')
 		</div>
 	</section>
+	</center>
 
+	<center>
 	<section class="wishes" id="sec-wishes">
 		@include('Home.views.partial_detail.wishes')
 	</section>
+	</center>
 
+	<center>
 	<section class="footer">
 		<div class="row">
 			<div class="col">
@@ -98,7 +108,25 @@
 			</div>
 		</div>
 	</section>
+</center>
 
 @endsection
 
+{{-- @section('script')
+
+	<script>
+		
+		$(document).ready( function () {
+
+			var device 			= "<?= $device; ?>";
+			var headerMobile 	= "<?= $headerMobile; ?>";
+			var headerDesktop 	= "<?= $headerMobile; ?>";
+			
+			if (device == 1) {
+			}
+		});
+
+	</script>
+
+@endsection --}}
 

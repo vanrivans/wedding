@@ -20,6 +20,9 @@ class Home extends MY_Controller
 	{
 		$data['device']				= $this->device;
 
+		$data['headerMobile']		= base_url('assets/images/header_mobile.webp');
+		$data['headerDesktop']		= base_url('assets/images/header_desktop.webp');
+
 		$data['brideFullName1'] 	= 'Tasia Wardantika';
 		$data['brideFullName2'] 	= 'Amanda Budi Ksatria';
 		$data['brideName1'] 		= 'Tika';

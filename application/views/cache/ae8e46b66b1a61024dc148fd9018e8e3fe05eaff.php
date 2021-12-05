@@ -2,7 +2,7 @@
 	<div class="content__head" id="sec-content-head">
 		<div class="row">
 			<div class="col-xs-12">
-				<div>بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+				<div class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
 				<div class="content__head__title title_style">Bismillahirrahmanirrahim</div>
 				<p class="content__head__body">
 					Assalamu'alaikum Warahmatullahi Wabarakaatuh<br>
@@ -14,11 +14,12 @@
 		</div>
 	</div>
 
+	<center>
 	<div class="content__body">
 
-		<div class="row">
+		<div class="row" style="align-items: center">
 
-			<div class="col-xs-12">
+			<div class="col-xs-12 col-md-5">
 				<div class="content__body__person" id="sec-content-body-p1">
 					<center>
 					<div class="person">
@@ -38,13 +39,13 @@
 				</div>
 			</div>
 
-			<div class="col-xs-12">
+			<div class="col-xs-12 col-md-2">
 				<div class="content__body__separator">
 					<span class="content__body__separator__style">&</span>
 				</div>
 			</div>
 
-			<div class="col-xs-12">
+			<div class="col-xs-12 col-md-5">
 				<div class="content__body__person" id="sec-content-body-p2">
 					<center>
 					<div class="person">
@@ -67,4 +68,5 @@
 		</div>
 
 	</div>
+	</center>
 <?php /**PATH E:\xampp\htdocs\wedding\application\modules/Home/views/partial_detail/content.blade.php ENDPATH**/ ?>

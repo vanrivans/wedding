@@ -86,7 +86,7 @@ $CI = &get_instance();
 
         <div class="row">
 
-            <div class="col-md-12 p-0">
+            <div class="col-12 p-0">
                 
                 <div class="container-fluid p-0">
                     @yield('header')
@@ -107,7 +107,7 @@ $CI = &get_instance();
 				<a href="https://instagram.com/digitalbyree" target="_blank" class="d-block mb-2">
 					<i class="bi bi-instagram"></i> Digital by REE
 				</a>
-				<img src="{{ base_url('assets/logo/logo.png') }}" width="50" height="50">
+				<img src="{{ base_url('assets/logo/logo.png') }}" width="50" height="50" class="img-logo">
 			</div>
 		</div>
 	</section>

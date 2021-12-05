@@ -6,3 +6,5 @@
 
 <link href="{{ base_url('assets/styles/animation.css') }}" rel="stylesheet">
 <link href="{{ base_url('assets/styles/source.css') }}" rel="stylesheet">
+<link href="{{ base_url('assets/styles/source-desktop.css') }}" rel="stylesheet">
+<link href="{{ base_url('assets/styles/source-tablet.css') }}" rel="stylesheet">

@@ -1,4 +1,4 @@
-
+	
     <div class="row absent__row">
         <div class="col">
             {{-- <img src="{{ base_url('assets/templates/mark-l.png') }}" class="absent__mark mark-l"> --}}
