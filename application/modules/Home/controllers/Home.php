@@ -22,7 +22,7 @@ class Home extends MY_Controller
 		$this->apiAddress 	= base_url() . 'api/';
 		$this->assetsPath 	= base_url() . 'assets/';
 		$this->imagesPath 	= base_url() . 'assets/images/';
-		$this->songPath 	= base_url() . 'assets/song/';
+		$this->songPath 	= base_url() . 'assets/songs/';
 	}
 
 	public function index()
@@ -30,23 +30,25 @@ class Home extends MY_Controller
 		$uKey = $this->input->get('u_key');
 		$rKey = $this->input->get('r_key');
 
-		$result  = json_decode(file_get_contents($this->get_data . 'get_data/' . $uKey . '/' . $rKey), TRUE);
+		$result  = json_decode(file_get_contents($this->apiAddress . 'get_data/' . $uKey . '/' . $rKey), TRUE);
 
 		if ($result['Status'] != 200) {
 			redirect('404_override');
 		}
 
+		$result = $result['data'];
+
 		$template 					= $result['template']['path'];
 		$song						= $this->songPath . $result['template']['song'];
 
-		$data['templatePath']		= base_url() . $template;
+		$data['templatePath']		= $this->assetsPath . $template . '/';
 		$data['imagesPath']			= $this->imagesPath . $uKey . '/';
 		$data['galleriesPath']		= $this->imagesPath . $uKey . '/galleries/';
 
 		$data['device']				= $this->device;
 
-		$data['headerMobile']		= $data['imagesPath'] . 'header_mobile.webp';
-		$data['headerDesktop']		= $data['imagesPath'] . 'header_desktop.webp';
+		$data['headerMobile']		= 'url(' . base_url() . 'assets/images/' . $uKey . '/header_mobile.jpg)';
+		$data['headerDesktop']		= 'url(' . base_url() . '/assets/images/' . $uKey . '/header_desktop.jpg)';
 
 		$data['brideFullName1'] 	= $result['bride']['w']['fullname'];
 		$data['brideName1'] 		= $result['bride']['w']['nickname'];

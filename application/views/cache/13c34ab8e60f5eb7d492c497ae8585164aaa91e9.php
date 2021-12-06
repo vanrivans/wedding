@@ -5,10 +5,10 @@
 			<center>
 			<div class="row event__border">
 				<div class="col-6 col-br-l">
-					<img src="<?php echo e(base_url('assets/templates/br-top-l.png')); ?>" style="width:100%;height:100%">
+					<img src="<?php echo e($templatePath . 'br-top-l.png'); ?>" style="width:100%;height:100%">
 				</div>
 				<div class="col-6 col-br-r">
-					<img src="<?php echo e(base_url('assets/templates/br-top-r.png')); ?>" style="width:100%;height:100%">
+					<img src="<?php echo e($templatePath . 'br-top-r.png'); ?>" style="width:100%;height:100%">
 				</div>
 			</div>
 			</center>
@@ -92,10 +92,10 @@
 			<center>
 			<div class="row event__border">
 				<div class="col-6 col-br-l">
-					<img src="<?php echo e(base_url('assets/templates/br-bot-l.png')); ?>" style="width:100%;height:100%">
+					<img src="<?php echo e($templatePath . 'br-bot-l.png'); ?>" style="width:100%;height:100%">
 				</div>
 				<div class="col-6 col-br-r">
-					<img src="<?php echo e(base_url('assets/templates/br-bot-r.png')); ?>" style="width:100%;height:100%">
+					<img src="<?php echo e($templatePath . 'br-bot-r.png'); ?>" style="width:100%;height:100%">
 				</div>
 			</div>
 			</center>

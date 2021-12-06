@@ -42,7 +42,7 @@ class Api extends MY_Controller
 					'path' 			=> $result['t_path'],
 					'song'			=> $result['t_song']
 				],
-				'event'				=> [
+				'events'			=> [
 					'date'			=> $result['e_date'],
 					'date_format'	=> date('d.m.Y', strtotime($result['e_date'])),
 					'time_format'	=> date('H:i', strtotime($result['e_date'])),

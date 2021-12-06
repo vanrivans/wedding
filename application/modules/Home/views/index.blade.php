@@ -88,19 +88,19 @@
 					
 					<div class="row footer__border" style="margin:7.5% 0">
 						<div class="col-6 col-br-l">
-							<img src="{{ $templatesPath . 'br-top-l.png' }}" style="width:100%;height:100%">
+							<img src="{{ $templatePath . 'br-top-l.png' }}" style="width:100%;height:100%">
 						</div>
 						<div class="col-6 col-br-r">
-							<img src="{{ $templatesPath . 'br-top-r.png' }}" style="width:100%;height:100%">
+							<img src="{{ $templatePath . 'br-top-r.png' }}" style="width:100%;height:100%">
 						</div>
 					</div>
 					<span>{{ $brideName1 }} & {{ $brideName2 }}</span>
 					<div class="row footer__border m-0">
 						<div class="col-6 col-br-l">
-							<img src="{{ $templatesPath . 'br-bot-l.png' }}" style="width:100%;height:100%">
+							<img src="{{ $templatePath . 'br-bot-l.png' }}" style="width:100%;height:100%">
 						</div>
 						<div class="col-6 col-br-r">
-							<img src="{{ $templatesPath . 'br-bot-r.png' }}" style="width:100%;height:100%">
+							<img src="{{ $templatePath . 'br-bot-r.png' }}" style="width:100%;height:100%">
 						</div>
 					</div>
 

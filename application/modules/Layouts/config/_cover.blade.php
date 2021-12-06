@@ -1,9 +1,9 @@
 
 
 @if ($device === 1)
-<img src="{{ $imagesPath . 'cover_mobile.webp' }}" class="cover__image" alt="" title="">
+<img src="{{ $imagesPath . 'cover_mobile.jpg' }}" class="cover__image" alt="" title="">
 @else
-<img src="{{ $imagesPath . 'cover_desktop.webp' }}" class="cover__image" alt="" title="">
+<img src="{{ $imagesPath . 'cover_desktop.jpg' }}" class="cover__image" alt="" title="">
 @endif
 <div class="cover__box">
 	<img src="{{ base_url('assets/logo/logo.png') }}" width="50" height="50" class="watermark">

@@ -21,7 +21,7 @@
 	<center>
 	<div class="row galleries__row2">
 		<div class="col-12 galleries__col2">
-			<img data-src="{{ $templatePath . 'galleries-1.webp' }}" class="galleries__image lazyload">
+			<img data-src="{{ $galleriesPath . 'galleries-1.webp' }}" class="galleries__image lazyload">
 		</div>
 		<div class="col-6 galleries__col2">
 			<img data-src="{{ $galleriesPath . 'galleries-2.webp' }}" class="galleries__image lazyload">

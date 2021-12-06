@@ -195,15 +195,19 @@
 
 	function change_cover_img() {
 
-		var base_url = "<?= base_url(); ?>assets/images/";
+		var images_url = "<?= $imagesPath; ?>";
 		var srcCoverImg = "";
+		var srcHeaderImg = "";
 
 		if($(window).width() >= 1024) { 
-			srcCoverImg = base_url + 'cover_desktop.jpg';
+			srcCoverImg = images_url + 'cover_desktop.jpg';
+			srcHeaderImg = "<?= $headerDesktop; ?>";
 		} else {
-			srcCoverImg = base_url + 'cover_mobile.jpg';
+			srcCoverImg = images_url + 'cover_mobile.jpg';
+			srcHeaderImg = "<?= $headerMobile; ?>";
 		}
 		$(".cover__image").attr("src", srcCoverImg);
+		$(".header__row").css('background-image', srcHeaderImg);
 	}
 
 	$("#btn-cover").on('click', function () {

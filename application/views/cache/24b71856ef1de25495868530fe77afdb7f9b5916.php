@@ -1,7 +1,7 @@
 
 	<div class="row remaining__row">
 		<div class="col">
-			<img src="<?php echo e(base_url('assets/templates/mark-l.png')); ?>" class="remaining__mark mark-l">
+			<img src="<?php echo e($templatePath . 'mark-l.png'); ?>" class="remaining__mark mark-l">
 			<div class="remaining__title">
 				Catat Tanggalnya
 			</div>
@@ -9,7 +9,7 @@
 				<?php echo e($resepsiDate); ?>
 
 			</div>
-			<img src="<?php echo e(base_url('assets/templates/mark-r.png')); ?>" class="remaining__mark mark-r">
+			<img src="<?php echo e($templatePath . 'mark-r.png'); ?>" class="remaining__mark mark-r">
 		</div>
 		<div class="col-12" style="margin:5% 0">
 			<center>

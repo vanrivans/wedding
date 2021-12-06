@@ -84,19 +84,19 @@
 					
 					<div class="row footer__border" style="margin:7.5% 0">
 						<div class="col-6 col-br-l">
-							<img src="<?php echo e(base_url('assets/templates/br-top-l.png')); ?>" style="width:100%;height:100%">
+							<img src="<?php echo e($templatePath . 'br-top-l.png'); ?>" style="width:100%;height:100%">
 						</div>
 						<div class="col-6 col-br-r">
-							<img src="<?php echo e(base_url('assets/templates/br-top-r.png')); ?>" style="width:100%;height:100%">
+							<img src="<?php echo e($templatePath . 'br-top-r.png'); ?>" style="width:100%;height:100%">
 						</div>
 					</div>
 					<span><?php echo e($brideName1); ?> & <?php echo e($brideName2); ?></span>
 					<div class="row footer__border m-0">
 						<div class="col-6 col-br-l">
-							<img src="<?php echo e(base_url('assets/templates/br-bot-l.png')); ?>" style="width:100%;height:100%">
+							<img src="<?php echo e($templatePath . 'br-bot-l.png'); ?>" style="width:100%;height:100%">
 						</div>
 						<div class="col-6 col-br-r">
-							<img src="<?php echo e(base_url('assets/templates/br-bot-r.png')); ?>" style="width:100%;height:100%">
+							<img src="<?php echo e($templatePath . 'br-bot-r.png'); ?>" style="width:100%;height:100%">
 						</div>
 					</div>
 
@@ -108,7 +108,26 @@
 
 <?php $__env->stopSection(); ?>
 
+<?php $__env->startSection('script'); ?>
 
+	<script>
+		
+		$(document).ready( function () {
+
+			var device 			= "<?= $device; ?>";
+			var headerMobile 	= "<?= $headerMobile; ?>";
+			var headerDesktop 	= "<?= $headerMobile; ?>";
+			
+			if (device == 1) {
+				$('.header__row').css('background-image', headerMobile);
+			} else {
+				$('.header__row').css('background-image', headerDesktop);
+			}
+		});
+
+	</script>
+
+<?php $__env->stopSection(); ?>
 
 
 <?php echo $__env->make('Layouts.layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\xampp\htdocs\wedding\application\modules/Home/views/index.blade.php ENDPATH**/ ?>
