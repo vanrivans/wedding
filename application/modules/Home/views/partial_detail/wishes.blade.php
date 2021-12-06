@@ -1,11 +1,11 @@
 	
 	<div class="row wishes__row">
 		<div class="col wishes__col">
-            <img src="{{ base_url('assets/templates/mark-l.png') }}" class="wishes__mark mark-l">
+            <img src="{{ $templatePath . 'mark-l.png' }}" class="wishes__mark mark-l">
 			<div class="wishes__title">
 				Ucapan & Doa
 			</div>
-            <img src="{{ base_url('assets/templates/mark-r.png') }}" class="wishes__mark mark-r">
+            <img src="{{ $templatePath . 'mark-r.png' }}" class="wishes__mark mark-r">
 		</div>
 	</div>
 

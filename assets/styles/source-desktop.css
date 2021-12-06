@@ -42,9 +42,9 @@
 	ul.container-fluid > li > a > i {
 		font-size: 25px;
 	}
-	.header__row {
+	/* .header__row {
 		background-image: url(../images/header_desktop.jpg) !important;
-	}
+	} */
 	.header__name {
 		font-size: 5rem !important;
 	}

@@ -212,7 +212,7 @@ p {
 	/* width: 100%; */
 	min-height: 700px;
 	height: 100vh;
-	background-image: url(../images/header_mobile.webp);
+	/* background-image: url(../images/header_mobile.webp); */
 	background-size: cover;
 	background-position: 50% 0;
 	background-repeat: no-repeat;

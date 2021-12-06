@@ -88,19 +88,19 @@
 					
 					<div class="row footer__border" style="margin:7.5% 0">
 						<div class="col-6 col-br-l">
-							<img src="{{ base_url('assets/templates/br-top-l.png') }}" style="width:100%;height:100%">
+							<img src="{{ $templatesPath . 'br-top-l.png' }}" style="width:100%;height:100%">
 						</div>
 						<div class="col-6 col-br-r">
-							<img src="{{ base_url('assets/templates/br-top-r.png') }}" style="width:100%;height:100%">
+							<img src="{{ $templatesPath . 'br-top-r.png' }}" style="width:100%;height:100%">
 						</div>
 					</div>
 					<span>{{ $brideName1 }} & {{ $brideName2 }}</span>
 					<div class="row footer__border m-0">
 						<div class="col-6 col-br-l">
-							<img src="{{ base_url('assets/templates/br-bot-l.png') }}" style="width:100%;height:100%">
+							<img src="{{ $templatesPath . 'br-bot-l.png' }}" style="width:100%;height:100%">
 						</div>
 						<div class="col-6 col-br-r">
-							<img src="{{ base_url('assets/templates/br-bot-r.png') }}" style="width:100%;height:100%">
+							<img src="{{ $templatesPath . 'br-bot-r.png' }}" style="width:100%;height:100%">
 						</div>
 					</div>
 
@@ -112,7 +112,7 @@
 
 @endsection
 
-{{-- @section('script')
+@section('script')
 
 	<script>
 		
@@ -123,10 +123,13 @@
 			var headerDesktop 	= "<?= $headerMobile; ?>";
 			
 			if (device == 1) {
+				$('.header__row').css('background-image', headerMobile);
+			} else {
+				$('.header__row').css('background-image', headerDesktop);
 			}
 		});
 
 	</script>
 
-@endsection --}}
+@endsection
 

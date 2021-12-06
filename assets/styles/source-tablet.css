@@ -13,9 +13,9 @@
 	.header__date {
 		margin: 30% 30% 0 30% !important;
 	}
-	.header__row {
+	/* .header__row {
 		background-image: url(../images/header_desktop.jpg) !important;
-	}
+	} */
 	.remaining__mark,
 	.wishes__mark {
 		width: 250px !important;

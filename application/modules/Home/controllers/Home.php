@@ -3,12 +3,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Home extends MY_Controller
 {
-	var $apiAddress = '';
-	var $device		= 0;
-	var $igBaseUrl	= 'https://instagram.com/';
-	var $assetsPath = '';
-	var $songPath 	= '';
-	var $imagesPath = '';
+	var $apiAddress 	= '';
+	var $device			= 0;
+	var $igBaseUrl		= 'https://instagram.com/';
+	var $assetsPath 	= '';
+	var $songPath 		= '';
+	var $imagesPath 	= '';
+	var $galleriesPath 	= '';
 
 	public function __construct()
 	{
@@ -38,10 +39,14 @@ class Home extends MY_Controller
 		$template 					= $result['template']['path'];
 		$song						= $this->songPath . $result['template']['song'];
 
+		$data['templatePath']		= base_url() . $template;
+		$data['imagesPath']			= $this->imagesPath . $uKey . '/';
+		$data['galleriesPath']		= $this->imagesPath . $uKey . '/galleries/';
+
 		$data['device']				= $this->device;
 
-		$data['headerMobile']		= $this->imagesPath . 'header_mobile.webp';
-		$data['headerDesktop']		= $this->imagesPath . 'header_desktop.webp';
+		$data['headerMobile']		= $data['imagesPath'] . 'header_mobile.webp';
+		$data['headerDesktop']		= $data['imagesPath'] . 'header_desktop.webp';
 
 		$data['brideFullName1'] 	= $result['bride']['w']['fullname'];
 		$data['brideName1'] 		= $result['bride']['w']['nickname'];
@@ -63,9 +68,9 @@ class Home extends MY_Controller
 		$data['akadLoc']			= $result['events']['akad']['loc'];
 
 		$data['resepsiDay']			= $result['events']['resepsi']['day'];
-		$data['resepsiDate']			= date('d.m.Y', strtotime($result['events']['resepsi']['date']));
-		$data['resepsiTime']			= $result['events']['resepsi']['time'];
-		$data['resepsiPlace']			= $result['events']['resepsi']['place'];
+		$data['resepsiDate']		= date('d.m.Y', strtotime($result['events']['resepsi']['date']));
+		$data['resepsiTime']		= $result['events']['resepsi']['time'];
+		$data['resepsiPlace']		= $result['events']['resepsi']['place'];
 		$data['resepsiAddress']		= $result['events']['resepsi']['address'];
 		$data['resepsiLoc']			= $result['events']['resepsi']['loc'];
 
@@ -79,7 +84,7 @@ class Home extends MY_Controller
 		$data['Url']				= 'https://wedding.reginabusiness.id/';
 		$data['PageTitle']			= $data['brideName1'] . ' & ' . $data['brideName2'] . ' | ' . $data['Author'];
 		$data['SiteName']			= $data['PageTitle'];
-		$data['Image']				= $this->imagesPath . 'cover_mobile.webp';
+		$data['Image']				= $data['imagesPath'] . 'cover_mobile.webp';
 		$data['Song']				= $song;
 
 		return view('Home/views/index', $data);
