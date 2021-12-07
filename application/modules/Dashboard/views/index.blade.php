@@ -7,7 +7,7 @@
 
 		<div class="col col-md-6 col-lg-6">
 
-			<table id="table-recipient">
+			<table id="table-recipient" class="table table-bordered table-stripped">
 				<thead>
 					<tr>
 						<th>Recipient</th>
@@ -61,7 +61,7 @@
 
 							var html = '';
 
-							for (i = 0; i < data.length; i++;) {
+							for (i = 0; i < data.length; i++) {
 
 								html += append_row(data[i]);
 							}
