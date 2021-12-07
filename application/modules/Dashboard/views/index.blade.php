@@ -49,7 +49,7 @@
 		function get_recipient() {
 
 			$.ajax({
-				url: apiAddress . ckey,
+				url: apiAddress . 'recipient/' . ckey,
 				dataType: 'json',
 				success: function (response) {
 
