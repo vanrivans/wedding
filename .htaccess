@@ -1,11 +1,17 @@
+<IfModule mod_rewrite.c>
 RewriteEngine on
 
 # redirect https
-RewriteCond %{HTTPS} on
-RewriteRule ^.*$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# rewrite ci sub path fix
+# redirect to www
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# RewriteBase /en/
 RewriteCond $1 !^(index\.php|resources|robots\.txt)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+RewriteRule . /wedding/index.php [L,QSA]
+</IfModule>
