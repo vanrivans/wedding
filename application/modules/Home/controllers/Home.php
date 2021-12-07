@@ -36,70 +36,68 @@ class Home extends MY_Controller
 			redirect('404_override');
 		}
 
-		var_dump($result);
+		$result = $result['data'];
 
-		// $result = $result['data'];
+		$template 					= $result['template']['path'];
+		$song						= $this->songPath . $result['template']['song'];
 
-		// $template 					= $result['template']['path'];
-		// $song						= $this->songPath . $result['template']['song'];
+		$data['apiAddress']			= $this->apiAddress;
 
-		// $data['apiAddress']			= $this->apiAddress;
+		$data['c_id']				= $result['c_id'];
+		$data['r_id']				= $result['recipient']['id'];
+		$data['templatePath']		= $this->assetsPath . $template . '/';
+		$data['imagesPath']			= $this->imagesPath . $uKey . '/';
+		$data['galleriesPath']		= $this->imagesPath . $uKey . '/galleries/';
 
-		// $data['c_id']				= $result['c_id'];
-		// $data['r_id']				= $result['recipient']['id'];
-		// $data['templatePath']		= $this->assetsPath . $template . '/';
-		// $data['imagesPath']			= $this->imagesPath . $uKey . '/';
-		// $data['galleriesPath']		= $this->imagesPath . $uKey . '/galleries/';
+		$data['device']				= $this->device;
 
-		// $data['device']				= $this->device;
+		$data['headerMobile']		= 'url(' . base_url() . 'assets/images/' . $uKey . '/header_mobile.webp)';
+		$data['headerDesktop']		= 'url(' . base_url() . 'assets/images/' . $uKey . '/header_desktop.jpg)';
 
-		// $data['headerMobile']		= 'url(' . base_url() . 'assets/images/' . $uKey . '/header_mobile.webp)';
-		// $data['headerDesktop']		= 'url(' . base_url() . 'assets/images/' . $uKey . '/header_desktop.jpg)';
+		$data['brideFullName1'] 	= $result['bride']['w']['fullname'];
+		$data['brideName1'] 		= $result['bride']['w']['nickname'];
+		$data['brideIg1']			= $result['bride']['w']['ig'];
+		$data['ig1']				= $this->igBaseUrl . $data['brideIg1'];
+		$data['parent1']			= $result['bride']['w']['parent'];
 
-		// $data['brideFullName1'] 	= $result['bride']['w']['fullname'];
-		// $data['brideName1'] 		= $result['bride']['w']['nickname'];
-		// $data['brideIg1']			= $result['bride']['w']['ig'];
-		// $data['ig1']				= $this->igBaseUrl . $data['brideIg1'];
-		// $data['parent1']			= $result['bride']['w']['parent'];
+		$data['brideFullName2'] 	= $result['bride']['m']['fullname'];
+		$data['brideName2'] 		= $result['bride']['m']['nickname'];
+		$data['brideIg2']			= $result['bride']['m']['ig'];
+		$data['ig2']				= $this->igBaseUrl . $data['brideIg1'];
+		$data['parent2']			= $result['bride']['m']['parent'];
 
-		// $data['brideFullName2'] 	= $result['bride']['m']['fullname'];
-		// $data['brideName2'] 		= $result['bride']['m']['nickname'];
-		// $data['brideIg2']			= $result['bride']['m']['ig'];
-		// $data['ig2']				= $this->igBaseUrl . $data['brideIg1'];
-		// $data['parent2']			= $result['bride']['m']['parent'];
+		$data['eventDate']			= date('M d, Y H:i:s', strtotime($result['events']['date']));
 
-		// $data['eventDate']			= date('M d, Y H:i:s', strtotime($result['events']['date']));
+		$data['akadDay']			= $result['events']['akad']['day'];
+		$data['akadDate']			= date('d.m.Y', strtotime($result['events']['akad']['date']));
+		$data['akadTime']			= $result['events']['akad']['time'];
+		$data['akadPlace']			= $result['events']['akad']['place'];
+		$data['akadAddress']		= $result['events']['akad']['address'];
+		$data['akadLoc']			= $result['events']['akad']['loc'];
 
-		// $data['akadDay']			= $result['events']['akad']['day'];
-		// $data['akadDate']			= date('d.m.Y', strtotime($result['events']['akad']['date']));
-		// $data['akadTime']			= $result['events']['akad']['time'];
-		// $data['akadPlace']			= $result['events']['akad']['place'];
-		// $data['akadAddress']		= $result['events']['akad']['address'];
-		// $data['akadLoc']			= $result['events']['akad']['loc'];
+		$data['resepsiDay']			= $result['events']['resepsi']['day'];
+		$data['resepsiDate']		= date('d.m.Y', strtotime($result['events']['resepsi']['date']));
+		$data['resepsiTime']		= $result['events']['resepsi']['time'];
+		$data['resepsiPlace']		= $result['events']['resepsi']['place'];
+		$data['resepsiAddress']		= $result['events']['resepsi']['address'];
+		$data['resepsiLoc']			= $result['events']['resepsi']['loc'];
 
-		// $data['resepsiDay']			= $result['events']['resepsi']['day'];
-		// $data['resepsiDate']		= date('d.m.Y', strtotime($result['events']['resepsi']['date']));
-		// $data['resepsiTime']		= $result['events']['resepsi']['time'];
-		// $data['resepsiPlace']		= $result['events']['resepsi']['place'];
-		// $data['resepsiAddress']		= $result['events']['resepsi']['address'];
-		// $data['resepsiLoc']			= $result['events']['resepsi']['loc'];
+		$data['addToCalendar']		= 'https://www.google.com/calendar/render?action=TEMPLATE&text=' . $data['brideName1'] . '+%26+' . $data['brideName2'] . '+Wedding&dates=' . $result['events']['datetime_format'] . '/' . $result['events']['end_format'] . '&details=You%27re+Invited+to+our+wedding+ceremony+%7C+' . $data['brideName2'] . '+%26+' . $data['brideName1'] . '+Wedding+%7C+' . $result['events']['day'] . '%2C+' . str_replace(' ', '+', $result['events']['date_format_id']);
 
-		// $data['addToCalendar']		= 'https://www.google.com/calendar/render?action=TEMPLATE&text=' . $data['brideName1'] . '+%26+' . $data['brideName2'] . '+Wedding&dates=' . $result['events']['datetime_format'] . '/' . $result['events']['end_format'] . '&details=You%27re+Invited+to+our+wedding+ceremony+%7C+' . $data['brideName2'] . '+%26+' . $data['brideName1'] . '+Wedding+%7C+' . $result['events']['day'] . '%2C+' . str_replace(' ', '+', $result['events']['date_format_id']);
+		/* Recipient */
+		$data['recipient']			= $result['recipient']['name'];
 
-		// /* Recipient */
-		// $data['recipient']			= $result['recipient']['name'];
+		/* Meta Setting */
+		$data['Author']				= 'Digital By Ree';
+		$data['MetaKeywords']		= '';
+		$data['MetaDescription']	= 'You\'re Invited to our wedding ceremony - ' . $data['brideName1'] . ' & ' . $data['brideName2'] . ' Wedding - ' . $data['resepsiDay'] . ', ' . $data['resepsiDate'];
+		$data['Url']				= 'https://digital.reginabusiness.id/';
+		$data['PageTitle']			= $data['brideName1'] . ' & ' . $data['brideName2'] . ' | ' . $data['Author'];
+		$data['SiteName']			= $data['PageTitle'];
+		$data['Image']				= $data['imagesPath'] . 'cover_mobile.webp';
+		$data['Song']				= $song;
 
-		// /* Meta Setting */
-		// $data['Author']				= 'Digital By Ree';
-		// $data['MetaKeywords']		= '';
-		// $data['MetaDescription']	= 'You\'re Invited to our wedding ceremony - ' . $data['brideName1'] . ' & ' . $data['brideName2'] . ' Wedding - ' . $data['resepsiDay'] . ', ' . $data['resepsiDate'];
-		// $data['Url']				= 'https://digital.reginabusiness.id/';
-		// $data['PageTitle']			= $data['brideName1'] . ' & ' . $data['brideName2'] . ' | ' . $data['Author'];
-		// $data['SiteName']			= $data['PageTitle'];
-		// $data['Image']				= $data['imagesPath'] . 'cover_mobile.webp';
-		// $data['Song']				= $song;
-
-		// return view('Home/views/index', $data);
+		return view('Home/views/index', $data);
 	}
 
 	public function test()
