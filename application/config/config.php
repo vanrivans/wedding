@@ -25,6 +25,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 */
 $root = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
 $root .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
+// $config['base_url'] = $root;
 $config['base_url'] = 'https://digital.reginabusiness.id/wedding/';
 
 /*

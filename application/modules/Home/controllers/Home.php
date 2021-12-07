@@ -20,6 +20,7 @@ class Home extends MY_Controller
 		}
 
 		$this->apiAddress 	= base_url() . 'api/';
+		// $this->apiAddress	= 'https://digital.reginabusiness.id/wedding/api/';
 		$this->assetsPath 	= base_url() . 'assets/';
 		$this->imagesPath 	= base_url() . 'assets/images/';
 		$this->songPath 	= base_url() . 'assets/songs/';
