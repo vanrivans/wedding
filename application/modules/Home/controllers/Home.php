@@ -30,9 +30,6 @@ class Home extends MY_Controller
 		$uKey = $this->input->get('u_key');
 		$rKey = $this->input->get('r_key');
 
-		echo 'Test';
-		return false;
-
 		$result  = json_decode(file_get_contents($this->apiAddress . 'get_data/' . $uKey . '/' . $rKey), TRUE);
 
 		if ($result['Status'] != 200) {
