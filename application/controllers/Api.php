@@ -8,7 +8,7 @@ header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
 class Api extends MY_Controller
 {
 
-	public function query_data($r_key, $u_key)
+	public function query_data($u_key, $r_key)
 	{
 
 		$sintax = "SELECT c.id AS c_id,
