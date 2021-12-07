@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-// header('Access-Control-Allow-Origin: *');
-// header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
-// header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
 
 class Home extends MY_Controller
 {
@@ -30,12 +30,12 @@ class Home extends MY_Controller
 		$this->songPath 	= base_url() . 'assets/songs/';
 	}
 
-	// function index()
-	// {
-	// 	echo 'test';
-	// }
+	function index()
+	{
+		echo 'test';
+	}
 
-	public function index()
+	public function indexx()
 	{
 		$uKey = $this->input->get('u_key');
 		$rKey = $this->input->get('r_key');
