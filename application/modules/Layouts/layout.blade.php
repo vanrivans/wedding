@@ -44,45 +44,9 @@ header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
 </head>
 <body style="overflow-x:hidden">
 
-	<nav class="navbar fixed-bottom">
-		<ul class="container-fluid m-0">
-			<li class="">
-				<a class="" aria-current="page" href="#">
-					<i class="bi bi-house-fill d-block"></i>
-					Home
-				</a>
-			</li>
-			<li class="">
-				<a class="" aria-current="page" href="#sec-content">
-					<i class="bi bi-heart-fill d-block"></i>
-					Couple
-				</a>
-			</li>
-			<li class="">
-				<a class="" aria-current="page" href="#sec-event">
-					<i class="bi bi-calendar-event-fill d-block"></i>
-					Event
-				</a>
-			</li>
-			<li class="">
-				<a class="" aria-current="page" href="#sec-galleries">
-					<i class="bi bi-camera-fill d-block"></i>
-					Galleries
-				</a>
-			</li>
-			<li class="">
-				<a class="" aria-current="page" href="#sec-wishes">
-					<i class="bi bi-chat-text d-block"></i>
-					Wishes
-				</a>
-			</li>
-		</ul>
-	</nav>
+	@yield('navbar')
 
-	{{-- Cover --}}
-	<section class="cover">
-		@include('Layouts.config._cover')
-	</section>
+	@yield('cover')
 
     {{-- Header & Body --}}
     <div class="container-fluid" style="z-index:1">

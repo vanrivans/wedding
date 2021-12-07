@@ -10,10 +10,3 @@
 			</div>
 		</div>
 	</section>
-
-	<audio id="song" preload="auto">
-		<source src="{{ $Song }}" type="audio/mp3">
-	</audio>
-	<div class="pause-song">
-		<i class="bi bi-pause-circle icons-song"></i>
-	</div>
