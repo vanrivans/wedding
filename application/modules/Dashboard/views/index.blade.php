@@ -92,10 +92,10 @@
 			}
 
 			html += '<tr>';
-				html += '<td>' + name . '</td>';
-				html += '<td>' + nomor . '</td>';
-				html += '<td>' + status . '</td>';
-				html += '<td>' + button . '</td>';
+				html += '<td>' + name + '</td>';
+				html += '<td>' + nomor + '</td>';
+				html += '<td>' + status + '</td>';
+				html += '<td>' + button + '</td>';
 			html += '</tr>';
 
 			return html;
