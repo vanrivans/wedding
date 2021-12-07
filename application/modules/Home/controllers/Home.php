@@ -32,7 +32,11 @@ class Home extends MY_Controller
 
 	function index()
 	{
-		echo 'test';
+		$uKey = '7d1dd26b';
+		$rKey = '4959a4';
+
+		$result  = json_decode(file_get_contents($this->apiAddress . 'get_data/' . $uKey . '/' . $rKey), TRUE);
+		var_dump($result);
 	}
 
 	public function indexx()
