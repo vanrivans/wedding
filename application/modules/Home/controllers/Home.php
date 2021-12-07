@@ -24,18 +24,18 @@ class Home extends MY_Controller
 		}
 
 		$this->apiAddress 	= base_url() . 'api/';
-		// $this->apiAddress	= 'https://digital.reginabusiness.id/wedding/api/';
+		// $this->apiAddress	= 'https://wedding.reginabusiness.id/wedding/api/';
 		$this->assetsPath 	= base_url() . 'assets/';
 		$this->imagesPath 	= base_url() . 'assets/images/';
 		$this->songPath 	= base_url() . 'assets/songs/';
 	}
 
-	function index()
-	{
-		echo 'test';
-	}
+	// function index()
+	// {
+	// 	echo 'test';
+	// }
 
-	public function indexx()
+	public function index()
 	{
 		$uKey = $this->input->get('u_key');
 		$rKey = $this->input->get('r_key');
@@ -101,7 +101,7 @@ class Home extends MY_Controller
 		$data['Author']				= 'Digital By Ree';
 		$data['MetaKeywords']		= '';
 		$data['MetaDescription']	= 'You\'re Invited to our wedding ceremony - ' . $data['brideName1'] . ' & ' . $data['brideName2'] . ' Wedding - ' . $data['resepsiDay'] . ', ' . $data['resepsiDate'];
-		$data['Url']				= 'https://digital.reginabusiness.id/';
+		$data['Url']				= 'https://wedding.reginabusiness.id/';
 		$data['PageTitle']			= $data['brideName1'] . ' & ' . $data['brideName2'] . ' | ' . $data['Author'];
 		$data['SiteName']			= $data['PageTitle'];
 		$data['Image']				= $data['imagesPath'] . 'cover_mobile.webp';
@@ -124,7 +124,7 @@ class Home extends MY_Controller
 		$date = 'Ahad, 19 Desember 2021';
 		$place = 'Notosuman Restaurant, Ngawi';
 		$jam = '11.00 - 13.00';
-		$link = 'https://digital.reginabusiness.id/';
+		$link = 'https://wedding.reginabusiness.id/';
 
 		$text = "Bismillahirahmanirrahim" . $enter . $enter . "Dear Regina Ayu T A" . $enter . $enter . "Assalamu’alaikum wr.wb" . $enter . "Dengan memohon rahmat dan ridho Allah subhanahu wa ta'ala, izinkan kami mengundang Saudara/i untuk hadir dan memberikan doa restu pada acara pernikahan kami," . $enter . $enter . $bride . $enter . "Yang akan diselenggarakan pada : " . $date . " di " . $place . $enter . "Pukul : " . $jam . $enter . "Detail acara: " . $link . $enter . $enter . "Kami memohon kehadiran dan doa restunya agar pernikahan kami mendapatkan ridho dari Allah subhanahu wa ta'ala serta menjadi keluarga yang sakinah, mawaddah, warahmah..." . $enter . "Aamiin Yaa Rabbal'aalamiin" . $enter . "Terima kasih..." . $enter . $enter . "Wassalamu’alaikum wr.wb";
 

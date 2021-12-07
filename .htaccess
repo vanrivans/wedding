@@ -13,5 +13,5 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond $1 !^(index\.php|resources|robots\.txt)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /wedding/index.php [L,QSA]
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
 </IfModule>
