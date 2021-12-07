@@ -30,7 +30,12 @@ class Home extends MY_Controller
 		$this->songPath 	= base_url() . 'assets/songs/';
 	}
 
-	public function index()
+	function index()
+	{
+		echo 'test';
+	}
+
+	public function indexx()
 	{
 		$uKey = $this->input->get('u_key');
 		$rKey = $this->input->get('r_key');
