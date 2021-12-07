@@ -32,9 +32,9 @@ class Home extends MY_Controller
 
 		$result  = json_decode(file_get_contents($this->apiAddress . 'get_data/' . $uKey . '/' . $rKey), TRUE);
 
-		// if ($result['Status'] != 200) {
-		// 	redirect('404_override');
-		// }
+		if ($result['Status'] != 200) {
+			redirect('404_override');
+		}
 
 		var_dump($result);
 
