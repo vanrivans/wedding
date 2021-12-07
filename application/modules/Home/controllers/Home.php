@@ -46,8 +46,8 @@ class Home extends MY_Controller
 			redirect('404_override');
 		}
 
-		var_dump($result);
-		return false;
+		// var_dump($result);
+		// return false;
 
 		$result = $result['data'];
 
