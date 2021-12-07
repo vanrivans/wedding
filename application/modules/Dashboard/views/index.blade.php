@@ -87,7 +87,7 @@
 
 			if (data['status'] == 1) {
 				status = '<span class="text-success" id="status-' + rkey + '">SENT</span>';
-			var button = '<button class="btn" onclick="send_card(\"' + ukey + '\", \"' + rkey + '\")"><span class="btn__inner" id="btn-' + rkey + '">RESEND</span></button>';
+				button = '<button class="btn" onclick="send_card(\"' + ukey + '\", \"' + rkey + '\")"><span class="btn__inner" id="btn-' + rkey + '">RESEND</span></button>';
 			}
 
 			html += '<tr>';
