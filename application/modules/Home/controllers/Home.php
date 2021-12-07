@@ -97,8 +97,8 @@ class Home extends MY_Controller
 		$data['Image']				= $data['imagesPath'] . 'cover_mobile.webp';
 		$data['Song']				= $song;
 
-		var_dump($data);
-		// return view('Home/views/index', $data);
+		// var_dump($data);
+		return view('Home/views/index', $data);
 	}
 
 	public function test()
