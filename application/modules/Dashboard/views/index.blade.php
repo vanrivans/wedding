@@ -49,7 +49,7 @@
 		function get_recipient() {
 
 			$.ajax({
-				url: apiAddress . 'recipient/' . ckey,
+				url: apiAddress + 'recipient/' + ckey,
 				dataType: 'json',
 				success: function (response) {
 
@@ -103,7 +103,7 @@
 		function send_card(ukey, rkey) {
 
 			$.ajax({
-				url: apiAddress . 'send_card',
+				url: apiAddress + 'send_card',
 				type: 'post',
 				data: {
 					ukey: ukey,
