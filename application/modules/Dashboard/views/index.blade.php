@@ -83,11 +83,12 @@
 			var name = data['name'];
 			var nomor = data['nomor'];
 			var status = 'null';
-			var button = '<button class="btn" onclick="send_card(\"' + ukey + '\", \"' + rkey + '\")"><span class="btn__inner" id="btn-' + rkey + '">SEND</span></button>';
+			var onclick = 'send_card("' + ukey + '", "' + rkey + '")';
+			var button = '<button class="btn" onclick="' + onclick + '"><span class="btn__inner" id="btn-' + rkey + '">SEND</span></button>';
 
 			if (data['status'] == 1) {
 				status = '<span class="text-success" id="status-' + rkey + '">SENT</span>';
-				button = '<button class="btn" onclick="send_card(\"' + ukey + '\", \"' + rkey + '\")"><span class="btn__inner" id="btn-' + rkey + '">RESEND</span></button>';
+				button = '<button class="btn" onclick="' + onclick + '"><span class="btn__inner" id="btn-' + rkey + '">RESEND</span></button>';
 			}
 
 			html += '<tr>';
