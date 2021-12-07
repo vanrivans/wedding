@@ -49,6 +49,7 @@ CREATE TABLE wedding (
     bride_m json,
     events json,
 	event_date datetime,
+	event_end datetime,
     created_at datetime,
     updated_at datetime
 );
@@ -83,6 +84,7 @@ CREATE INDEX absent_recipient_id_idx ON absent (recipient_id);
 
 CREATE TABLE comment (
     id int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	customer_id int(11),
     recipient_id int(11),
     comment_text text,
     created_at datetime
@@ -112,9 +114,9 @@ INSERT INTO customer (name, u_key, user_id, template_id, created_at, updated_at)
 VALUES
 ('Tika & Satria', LEFT(MD5(RAND()), 8), 2, 1, NOW(), NOW());
 
-INSERT INTO wedding (customer_id, event_date, created_at, updated_at)
+INSERT INTO wedding (customer_id, event_date, event_to, created_at, updated_at)
 VALUES 
-(1, '2021-12-19 11:00:00', NOW(), NOW());
+(1, '2021-12-19 11:00:00', '2021-12-19 13:00:00', NOW(), NOW());
 
 INSERT INTO recipient (customer_id, r_key, name, phone, created_at, updated_at)
 VALUES

@@ -16,7 +16,7 @@
 				<div class="col remaining__col" id="remaining__col1">
 					<center>
 					<div class="remaining__box">
-						<span class="remaining__time">10</span><br>
+						<span class="remaining__time" id="remaining_d">0</span><br>
 						<span class="remaining__text">Hari</span>
 					</div>
 					</center>
@@ -24,7 +24,7 @@
 				<div class="col remaining__col" id="remaining__col2">
 					<center>
 					<div class="remaining__box">
-						<span class="remaining__time">10</span><br>
+						<span class="remaining__time" id="remaining_h">0</span><br>
 						<span class="remaining__text">Jam</span>
 					</div>
 					</center>
@@ -32,7 +32,7 @@
 				<div class="col remaining__col" id="remaining__col3">
 					<center>
 					<div class="remaining__box">
-						<span class="remaining__time">10</span><br>
+						<span class="remaining__time" id="remaining_m">0</span><br>
 						<span class="remaining__text">Menit</span>
 					</div>
 					</center>
@@ -41,7 +41,7 @@
 			</center>
 		</div>
 		<div class="col-12" id="remaining__btn">
-			<a href="http://www.google.com/calendar/render?action=TEMPLATE&amp;text=Hendrasta+%26+Kharida+Wedding&amp;dates=20211120T070000/20211120T080000&amp;details=Kehadiran+You%27re+Invited+to+our+wedding+ceremony+%7C+Hendrasta+%26+Kharida+Wedding+%7C+Saturday%2C+20+November+2021" target="_blank" rel="nofollow" class="btn">
+			<a href="{{ $addToCalendar }}" target="_blank" rel="nofollow" class="btn">
 				<span class="btn__inner btn-add-to-calendar">Tambahkan di Kalender</span>
 			</a>
 		</div>

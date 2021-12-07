@@ -41,14 +41,18 @@ class Home extends MY_Controller
 		$template 					= $result['template']['path'];
 		$song						= $this->songPath . $result['template']['song'];
 
+		$data['apiAddress']			= $this->apiAddress;
+
+		$data['c_id']				= $result['c_id'];
+		$data['r_id']				= $result['recipient']['id'];
 		$data['templatePath']		= $this->assetsPath . $template . '/';
 		$data['imagesPath']			= $this->imagesPath . $uKey . '/';
 		$data['galleriesPath']		= $this->imagesPath . $uKey . '/galleries/';
 
 		$data['device']				= $this->device;
 
-		$data['headerMobile']		= 'url(' . base_url() . 'assets/images/' . $uKey . '/header_mobile.jpg)';
-		$data['headerDesktop']		= 'url(' . base_url() . '/assets/images/' . $uKey . '/header_desktop.jpg)';
+		$data['headerMobile']		= 'url(' . base_url() . 'assets/images/' . $uKey . '/header_mobile.webp)';
+		$data['headerDesktop']		= 'url(' . base_url() . 'assets/images/' . $uKey . '/header_desktop.jpg)';
 
 		$data['brideFullName1'] 	= $result['bride']['w']['fullname'];
 		$data['brideName1'] 		= $result['bride']['w']['nickname'];
@@ -61,6 +65,8 @@ class Home extends MY_Controller
 		$data['brideIg2']			= $result['bride']['m']['ig'];
 		$data['ig2']				= $this->igBaseUrl . $data['brideIg1'];
 		$data['parent2']			= $result['bride']['m']['parent'];
+
+		$data['eventDate']			= date('M d, Y H:i:s', strtotime($result['events']['date']));
 
 		$data['akadDay']			= $result['events']['akad']['day'];
 		$data['akadDate']			= date('d.m.Y', strtotime($result['events']['akad']['date']));
@@ -75,6 +81,8 @@ class Home extends MY_Controller
 		$data['resepsiPlace']		= $result['events']['resepsi']['place'];
 		$data['resepsiAddress']		= $result['events']['resepsi']['address'];
 		$data['resepsiLoc']			= $result['events']['resepsi']['loc'];
+
+		$data['addToCalendar']		= 'https://www.google.com/calendar/render?action=TEMPLATE&text=' . $data['brideName1'] . '+%26+' . $data['brideName2'] . '+Wedding&dates=' . $result['events']['datetime_format'] . '/' . $result['events']['end_format'] . '&details=You%27re+Invited+to+our+wedding+ceremony+%7C+' . $data['brideName2'] . '+%26+' . $data['brideName1'] . '+Wedding+%7C+' . $result['events']['day'] . '%2C+' . str_replace(' ', '+', $result['events']['date_format_id']);
 
 		/* Recipient */
 		$data['recipient']			= $result['recipient']['name'];

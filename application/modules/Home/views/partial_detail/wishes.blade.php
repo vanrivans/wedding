@@ -13,7 +13,7 @@
 		<div class="col-12">
 			<form id="form-wishes">
 				<div class="mb-2">
-					<textarea class="form-control wishes__text" rows="3" placeholder="Write something..." required></textarea>
+					<textarea id="wishes-text" class="form-control wishes__text" rows="3" placeholder="Write something..." required></textarea>
 				</div>
 				<div class="mb-2">
 					<button type="submit" class="btn wishes__btn">
@@ -22,24 +22,7 @@
 				</div>
 			</form>
 		</div>
-		<div class="col-12">
-			<div class="row wishes__row__comment">
-				<div class="col-2 pr-0 text-center">
-					<i class="bi bi-person-circle wishes__icon"></i>
-				</div>
-				<div class="col-10">
-					<div class="wishes__person">Regina</div>
-					<p class="wishes__comment">MasyaAllah Tabarakallah terharu bangetttttt , lancar sampai hari H dan selamat mengarungi bahtera rumah tangga , sehat dan bahagia selalu mas mbakku💕</p>
-				</div>
-			</div>
-			<div class="row wishes__row__comment">
-				<div class="col-2 pr-0 text-center">
-					<i class="bi bi-person-circle wishes__icon"></i>
-				</div>
-				<div class="col-10">
-					<div class="wishes__person">Regina</div>
-					<p class="wishes__comment">MasyaAllah Tabarakallah terharu bangetttttt , lancar sampai hari H dan selamat mengarungi bahtera rumah tangga , sehat dan bahagia selalu mas mbakku💕</p>
-				</div>
-			</div>
+		<div class="col-12" id="comment-list">
 		</div>
 	</div>
+

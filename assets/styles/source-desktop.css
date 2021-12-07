@@ -227,6 +227,9 @@
 		font-size: 22.5px !important;
 		text-align: left !important;
 	}
+	.wishes__row__comment {
+		padding: 0 !important;
+	}
 	.footer {
 		padding: 5% !important;
 	}
@@ -248,5 +251,8 @@
 	}
 	.footer__border {
 		margin: 0 !important;
+	}
+	#load-all {
+		font-size: 22px;
 	}
 }

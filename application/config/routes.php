@@ -53,6 +53,9 @@ $route['default_controller'] 	= 'Home/index';
 $route['githubupdate']			= 'Githubupdate/index';
 
 $route['api/get_data/(:any)/(:any)'] = 'Api/get_data/$1/$2';
+$route['api/submit_absent'] 	= 'Api/submit_absent';
+$route['api/submit_comment'] 	= 'Api/submit_comment';
+$route['api/comment/(:any)/(:any)']		= 'Api/get_comment/$1/$2';
 
 $route['home/test'] 			= 'Home/test';
 
