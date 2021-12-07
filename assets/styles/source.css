@@ -10,10 +10,6 @@ html {
 	--clr-red: #dc3545;
 	font-size: 18px;
 }
-html,
-body {
-	position: relative;
-}
 a[href],
 a[href]:hover {
 	color: #000;
