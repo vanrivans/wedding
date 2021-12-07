@@ -217,7 +217,7 @@
 		var c_id = "<?= $c_id; ?>";
 
 		$.ajax({
-			url: apiAddress + 'comment/' + c_id + '/' + page ,
+			url: apiAddress + 'comment/' + c_id + '/' + page,
 			dataType: 'json',
 			success: function (response) {
 
