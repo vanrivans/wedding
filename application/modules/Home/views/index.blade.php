@@ -472,6 +472,7 @@
 		});
 
 		window.addEventListener("scroll", function() {
+			var secContentBodyP2 	= document.getElementById("sec-content-body-p2");
 
 			if (window.scrollY > (secContentBodyP2.offsetTop + secContentBodyP2.offsetHeight + 1400)) {
 				$(".event__date").addClass('border-lr');
