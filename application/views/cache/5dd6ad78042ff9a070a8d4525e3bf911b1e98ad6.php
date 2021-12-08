@@ -1,5 +1,8 @@
 <?php
 $CI = &get_instance();
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -41,45 +44,9 @@ $CI = &get_instance();
 </head>
 <body style="overflow-x:hidden">
 
-	<nav class="navbar fixed-bottom">
-		<ul class="container-fluid m-0">
-			<li class="">
-				<a class="" aria-current="page" href="#">
-					<i class="bi bi-house-fill d-block"></i>
-					Home
-				</a>
-			</li>
-			<li class="">
-				<a class="" aria-current="page" href="#sec-content">
-					<i class="bi bi-heart-fill d-block"></i>
-					Couple
-				</a>
-			</li>
-			<li class="">
-				<a class="" aria-current="page" href="#sec-event">
-					<i class="bi bi-calendar-event-fill d-block"></i>
-					Event
-				</a>
-			</li>
-			<li class="">
-				<a class="" aria-current="page" href="#sec-galleries">
-					<i class="bi bi-camera-fill d-block"></i>
-					Galleries
-				</a>
-			</li>
-			<li class="">
-				<a class="" aria-current="page" href="#sec-wishes">
-					<i class="bi bi-chat-text d-block"></i>
-					Wishes
-				</a>
-			</li>
-		</ul>
-	</nav>
+	<?php echo $__env->yieldContent('navbar'); ?>
 
-	
-	<section class="cover">
-		<?php echo $__env->make('Layouts.config._cover', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-	</section>
+	<?php echo $__env->yieldContent('cover'); ?>
 
     
     <div class="container-fluid" style="z-index:1">

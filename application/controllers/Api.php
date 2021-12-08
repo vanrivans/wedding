@@ -173,30 +173,62 @@ class Api extends MY_Controller
 						JOIN customer c ON c.id = r.customer_id
 						WHERE c.u_key = '$c_key'";
 
-		$data = $this->db->query($sintax)->result();
+		$query = $this->db->query($sintax);
 
-		returnAPI($data, 'Data save successfully', 200, 1);
+		$results = $query->result();
+
+		// Loop
+		$data = array();
+
+		foreach ($results as $rows) :
+
+			$row = array();
+
+			$row[] = $rows->r_name;
+
+			$row[] = $rows->r_phone;
+
+			$button = '<button class="btn btn-send" data-ckey="' . $c_key . '" data-rkey="' . $rows->r_key . '"><span class="btn__inner">SEND</span></button>';
+
+			$row[] = $button;
+
+			$data[] = $row;
+
+		endforeach;
+
+		// Results
+		$output = array(
+			"draw" 				=> $_POST['draw'],
+			"recordsTotal" 		=> $query->num_rows(),
+			"recordsFiltered" 	=> 20,
+			"data" 				=> $data
+		);
+
+		echo json_encode($output);
 	}
 
 	public function send_card()
 	{
 		$enter = '%0A';
+		$amp = '%26';
 
 		$u_key = $this->input->post('ukey');
 		$r_key = $this->input->post('rkey');
 
 		$data = $this->query_data($u_key, $r_key);
 
-		$bride = $data['bride']['m']['fullname'] . ' & ' . $data['bride']['w']['fullname'];
-		$e_date = $data['events']['resepsi']['day'] . ', ' . $data['events']['resepsi']['date'];
+		$data = json_decode(json_encode($data), true);
+
+		$bride = $data['bride']['m']['fullname'] . ' dan ' . $data['bride']['w']['fullname'];
+		$e_date = $data['events']['resepsi']['day'] . ', ' . $data['events']['date_format_id'];
 		$e_place = $data['events']['resepsi']['place'];
 		$e_time = $data['events']['resepsi']['time'];
-		$link = 'https://wedding.reginabusiness.id/';
+		$link = 'https://wedding.reginabusiness.id/?u_key=' . $u_key . $amp . 'r_key' . $r_key;
 
 		$r_name = $data['recipient']['name'];
-		$r_nomor = $data['recipient']['nomor'];
+		$r_nomor = $data['recipient']['phone'];
 
-		$text = "Bismillahirahmanirrahim" . $enter . $enter . "Dear " . $r_name . $enter . $enter . "Assalamu’alaikum wr.wb" . $enter . "Dengan memohon rahmat dan ridho Allah subhanahu wa ta'ala, izinkan kami mengundang Saudara/i untuk hadir dan memberikan doa restu pada acara pernikahan kami," . $enter . $enter . $bride . $enter . "Yang akan diselenggarakan pada : " . $e_date . " di " . $e_place . $enter . "Pukul : " . $e_time . $enter . "Detail acara: " . $link . $enter . $enter . "Kami memohon kehadiran dan doa restunya agar pernikahan kami mendapatkan ridho dari Allah subhanahu wa ta'ala serta menjadi keluarga yang sakinah, mawaddah, warahmah..." . $enter . "Aamiin Yaa Rabbal'aalamiin" . $enter . "Terima kasih..." . $enter . $enter . "Wassalamu’alaikum wr.wb";
+		$text = "Bismillahirahmanirrahim" . $enter . $enter . "Dear " . $r_name . $enter . $enter . "Assalamu’alaikum wr.wb" . $enter . "Dengan memohon rahmat dan ridho Allah subhanahu wa ta'ala, izinkan kami mengundang Saudara/i untuk hadir dan memberikan doa restu pada acara pernikahan kami," . $enter . $enter . $bride . $enter . "Yang akan diselenggarakan pada : " . $e_date . " di " . $e_place . $enter . "Pukul : " . $e_time . $enter . "Detail acara : " . $link . $enter . $enter . "Kami memohon kehadiran dan doa restunya agar pernikahan kami mendapatkan ridho dari Allah subhanahu wa ta'ala serta menjadi keluarga yang sakinah, mawaddah, warahmah..." . $enter . "Aamiin Yaa Rabbal'aalamiin" . $enter . "Terima kasih..." . $enter . $enter . "Wassalamu’alaikum wr.wb";
 
 		$data['chat'] = "https://api.whatsapp.com/send/?phone=" . $r_nomor . "&text=" . $text;
 

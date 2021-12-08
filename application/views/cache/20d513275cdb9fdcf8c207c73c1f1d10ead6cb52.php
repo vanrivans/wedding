@@ -1,7 +1,4 @@
-{{-- Get layout --}}
-@extends('Layouts.layout')
-
-@section('main')
+<?php $__env->startSection('main'); ?>
 
     <div class="row">
 
@@ -27,9 +24,9 @@
 
 	</div>
 
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('script')
+<?php $__env->startSection('script'); ?>
 
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.css"/>
  
@@ -140,4 +137,6 @@
 		});
 	</script>
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('Layouts.layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\xampp\htdocs\wedding\application\modules/Dashboard/views/index.blade.php ENDPATH**/ ?>

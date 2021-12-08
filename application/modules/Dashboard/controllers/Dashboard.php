@@ -18,7 +18,6 @@ class Dashboard extends MY_Controller
 
 	public function index($c_key = '')
 	{
-
 		$data['ckey'] = $c_key;
 		$data['apiAddress'] = $this->apiAddress;
 

@@ -10,11 +10,4 @@
 			</div>
 		</div>
 	</section>
-
-	<audio id="song" preload="auto">
-		<source src="<?php echo e($Song); ?>" type="audio/mp3">
-	</audio>
-	<div class="pause-song">
-		<i class="bi bi-pause-circle icons-song"></i>
-	</div>
 <?php /**PATH E:\xampp\htdocs\wedding\application\modules/Layouts/config/_footer.blade.php ENDPATH**/ ?>
