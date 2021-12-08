@@ -223,7 +223,7 @@ class Api extends MY_Controller
 		$e_date = $data['events']['resepsi']['day'] . ', ' . $data['events']['date_format_id'];
 		$e_place = $data['events']['resepsi']['place'];
 		$e_time = $data['events']['resepsi']['time'];
-		$link = 'https://wedding.reginabusiness.id/?u_key=' . $u_key . $amp . 'r_key' . $r_key;
+		$link = 'https://wedding.reginabusiness.id/?u_key=' . $u_key . $amp . 'r_key=' . $r_key;
 
 		$r_name = $data['recipient']['name'];
 		$r_nomor = $data['recipient']['phone'];
