@@ -30,7 +30,7 @@ class Home extends MY_Controller
 		$this->songPath 	= base_url() . 'assets/songs/';
 	}
 
-	function indexx()
+	function index()
 	{
 		$uKey = '7d1dd26b';
 		$rKey = '4959a4';
@@ -39,7 +39,7 @@ class Home extends MY_Controller
 		var_dump($result);
 	}
 
-	public function index()
+	public function indexs()
 	{
 		$uKey = $this->input->get('u_key');
 		$rKey = $this->input->get('r_key');
